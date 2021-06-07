@@ -1329,7 +1329,7 @@ Please use the following table to find the changelog for a specific Node.js rele
 
 ## 2009.08.21, Version 0.1.5
 
-[Moved to doc/changelogs/CHANGELOG_V6.md#6.0.0](doc/changelogs/CHANGELOG_ARCHIVE.md#0.1.5 mark=).
+\[Moved to doc/changelogs/CHANGELOG_V6.md#6.0.0\](doc/changelogs/CHANGELOG_ARCHIVE.md#0.1.5 mark=).
 
 ## 2009.08.13, Version 0.1.4
 
