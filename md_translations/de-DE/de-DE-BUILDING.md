@@ -6,7 +6,7 @@ If you can reproduce a test failure, search for it in the [Node.js issue tracker
 
 ## Table of contents
 
-* [Supported platforms](#supported-platforms)
+* [Unterstützte Platformen](#supported-platforms)
   * [Input](#input)
   * [Strategy](#strategy)
   * [Platform list](#platform-list)
@@ -54,7 +54,7 @@ If you can reproduce a test failure, search for it in the [Node.js issue tracker
   * [Windows](#windows-5)
 * [Note for downstream distributors of Node.js](#note-for-downstream-distributors-of-nodejs)
 
-## Supported platforms
+## Unterstützte Platformen
 
 This list of supported platforms is current as of the branch/release to which it belongs.
 
@@ -737,6 +737,7 @@ To make `./myModule.js` available via `require('myModule')` and `./myModule2.js`
 ```
 
 ## Note for downstream distributors of Node.js
+Hello world!
 
 The Node.js ecosystem is reliant on ABI compatibility within a major release. To maintain ABI compatibility it is required that distributed builds of Node.js be built against the same version of dependencies, or similar versions that do not break their ABI compatibility, as those released by Node.js for any given `NODE_MODULE_VERSION` (located in `src/node_version.h`).
 
