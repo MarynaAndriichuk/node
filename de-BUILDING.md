@@ -4,7 +4,7 @@ Depending on what platform or features you need, the build process may differ. A
 
 If you can reproduce a test failure, search for it in the [Node.js issue tracker](https://github.com/nodejs/node/issues) or file a new issue.
 
-## Table of contents
+## Table of contents!
 
 * [Unterstützte Platformen](#supported-platforms)
   * [Eingabe](#input)
@@ -58,7 +58,7 @@ If you can reproduce a test failure, search for it in the [Node.js issue tracker
 
 This list of supported platforms is current as of the branch/release to which it belongs.
 
-### Input
+### Eingabe
 
 Node.js relies on V8 and libuv. We adopt a subset of their supported platforms.
 
