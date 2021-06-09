@@ -7,7 +7,7 @@ If you can reproduce a test failure, search for it in the [Node.js issue tracker
 ## Table of contents
 
 * [Unterstützte Platformen](#supported-platforms)
-  * [Input](#input)
+  * [Eingabe](#input)
   * [Strategy](#strategy)
   * [Platform list](#platform-list)
   * [Supported toolchains](#supported-toolchains)
