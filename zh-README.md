@@ -35,13 +35,13 @@ The Node.js project uses an [open governance model](./GOVERNANCE.md). The [OpenJ
 
 ## Support
 
-Looking for help? Looking for help? Check out the [instructions for getting support](.github/SUPPORT.md).
+Looking for help? Check out the [instructions for getting support](.github/SUPPORT.md).
 
 ## Release types
 
-* **Current**: Under active development. **Current**: Under active development. Code for the Current release is in the branch for its major version number (for example, [v15.x](https://github.com/nodejs/node/tree/v15.x)). Node.js releases a new major version every 6 months, allowing for breaking changes. This happens in April and October every year. Releases appearing each October have a support life of 8 months. Releases appearing each April convert to LTS (see below) each October. Node.js releases a new major version every 6 months, allowing for breaking changes. This happens in April and October every year. Releases appearing each October have a support life of 8 months. Releases appearing each April convert to LTS (see below) each October.
-* **LTS**: Releases that receive Long Term Support, with a focus on stability and security. Every even-numbered major version will become an LTS release. LTS releases receive 12 months of _Active LTS_ support and a further 18 months of _Maintenance_. LTS release lines have alphabetically-ordered code names, beginning with v4 Argon. There are no breaking changes or feature additions, except in some special circumstances. Every even-numbered major version will become an LTS release. LTS releases receive 12 months of _Active LTS_ support and a further 18 months of _Maintenance_. LTS release lines have alphabetically-ordered code names, beginning with v4 Argon. There are no breaking changes or feature additions, except in some special circumstances.
-* **Nightly**: Code from the Current branch built every 24-hours when there are changes. Use with caution. Use with caution.
+* **Current**: Under active development. Code for the Current release is in the branch for its major version number (for example, [v15.x](https://github.com/nodejs/node/tree/v15.x)). Node.js releases a new major version every 6 months, allowing for breaking changes. This happens in April and October every year. Releases appearing each October have a support life of 8 months. Releases appearing each April convert to LTS (see below) each October.
+* **LTS**: Releases that receive Long Term Support, with a focus on stability and security. Every even-numbered major version will become an LTS release. LTS releases receive 12 months of _Active LTS_ support and a further 18 months of _Maintenance_. LTS release lines have alphabetically-ordered code names, beginning with v4 Argon. There are no breaking changes or feature additions, except in some special circumstances.
+* **Nightly**: Code from the Current branch built every 24-hours when there are changes. Use with caution.
 
 Current and LTS releases follow [Semantic Versioning](https://semver.org). A member of the Release Team [signs](#release-keys) each Current and LTS release. For more information, see the [Release README](https://github.com/nodejs/Release#readme). A member of the Release Team [signs](#release-keys) each Current and LTS release. For more information, see the [Release README](https://github.com/nodejs/Release#readme).
 
@@ -52,7 +52,7 @@ Binaries, installers, and source tarballs are available at <https://nodejs.org/e
 #### Current and LTS releases
 <https://nodejs.org/download/release/>
 
-The [latest](https://nodejs.org/download/release/latest/) directory is an alias for the latest Current release. The latest-_codename_ directory is an alias for the latest release from an LTS line. For example, the [latest-fermium](https://nodejs.org/download/release/latest-fermium/) directory contains the latest Fermium (Node.js 14) release. The latest-_codename_ directory is an alias for the latest release from an LTS line. For example, the [latest-fermium](https://nodejs.org/download/release/latest-fermium/) directory contains the latest Fermium (Node.js 14) release.
+The [latest](https://nodejs.org/download/release/latest/) directory is an alias for the latest Current release. The latest-_codename_ directory is an alias for the latest release from an LTS line. For example, the [latest-fermium](https://nodejs.org/download/release/latest-fermium/) directory contains the latest Fermium (Node.js 14) release.
 
 #### Nightly releases
 <https://nodejs.org/download/nightly/>
@@ -79,7 +79,7 @@ To check that a downloaded file matches the checksum, run it through `sha256sum`
 $ grep node-vx.y.z.tar.gz SHASUMS256.txt | sha256sum -c -
 ```
 
-For Current and LTS, the GPG detached signature of `SHASUMS256.txt` is in `SHASUMS256.txt.sig`. You can use it with `gpg` to verify the integrity of `SHASUMS256.txt`. You will first need to import [the GPG keys of individuals authorized to create releases](#release-keys). To import the keys: You can use it with `gpg` to verify the integrity of `SHASUMS256.txt`. You will first need to import [the GPG keys of individuals authorized to create releases](#release-keys). To import the keys:
+For Current and LTS, the GPG detached signature of `SHASUMS256.txt` is in `SHASUMS256.txt.sig`. You can use it with `gpg` to verify the integrity of `SHASUMS256.txt`. You will first need to import [the GPG keys of individuals authorized to create releases](#release-keys). To import the keys:
 
 ```console
 $ gpg --keyserver pool.sks-keyservers.net --recv-keys DD8F2338BAE7501E3DD5AC78C273792F7D83545D
@@ -146,7 +146,7 @@ For information about the governance of the Node.js project, see [GOVERNANCE.md]
 * [bnoordhuis](https://github.com/bnoordhuis) - **Ben Noordhuis** &lt;info@bnoordhuis.nl&gt;
 * [chrisdickinson](https://github.com/chrisdickinson) - **Chris Dickinson** &lt;christopher.s.dickinson@gmail.com&gt;
 * [evanlucas](https://github.com/evanlucas) - **Evan Lucas** &lt;evanlucas@me.com&gt; (he/him)
-* [Fishrock123](https://github.com/Fishrock123) - **Jeremiah Senkpiel** &lt;fishrock123@rocketmail.com&gt;  (he/they)
+* [Fishrock123](https://github.com/Fishrock123) - **Jeremiah Senkpiel** &lt;fishrock123@rocketmail.com&gt; (he/they)
 * [gibfahn](https://github.com/gibfahn) - **Gibson Fahnestock** &lt;gibfahn@gmail.com&gt; (he/him)
 * [indutny](https://github.com/indutny) - **Fedor Indutny** &lt;fedor.indutny@gmail.com&gt;
 * [isaacs](https://github.com/isaacs) - **Isaac Z. Schlueter** &lt;i@izs.me&gt;
@@ -197,7 +197,7 @@ For information about the governance of the Node.js project, see [GOVERNANCE.md]
 * [eugeneo](https://github.com/eugeneo) - **Eugene Ostroukhov** &lt;eostroukhov@google.com&gt;
 * [evanlucas](https://github.com/evanlucas) - **Evan Lucas** &lt;evanlucas@me.com&gt; (he/him)
 * [fhinkel](https://github.com/fhinkel) - **Franziska Hinkelmann** &lt;franziska.hinkelmann@gmail.com&gt; (she/her)
-* [Fishrock123](https://github.com/Fishrock123) - **Jeremiah Senkpiel** &lt;fishrock123@rocketmail.com&gt; (he/they)
+* [Fishrock123](https://github.com/Fishrock123) - **Jeremiah Senkpiel** &lt;fishrock123@rocketmail.com&gt;  (he/they)
 * [Flarna](https://github.com/Flarna) - **Gerhard Stöbich** &lt;deb2001-github@yahoo.de&gt;  (he/they)
 * [gabrielschulhof](https://github.com/gabrielschulhof) - **Gabriel Schulhof** &lt;gabrielschulhof@gmail.com&gt;
 * [gdams](https://github.com/gdams) - **George Adams** &lt;george.adams@uk.ibm.com&gt; (he/him)
@@ -399,7 +399,7 @@ Other keys used to sign some previous releases:
 
 ## License
 
-Node.js is available under the [MIT license](https://opensource.org/licenses/MIT). Node.js also includes external libraries that are available under a variety of licenses.  See [LICENSE](https://github.com/nodejs/node/blob/HEAD/LICENSE) for the full license text. Node.js also includes external libraries that are available under a variety of licenses.  See [LICENSE](https://github.com/nodejs/node/blob/HEAD/LICENSE) for the full license text.
+Node.js is available under the [MIT license](https://opensource.org/licenses/MIT). Node.js also includes external libraries that are available under a variety of licenses.  See [LICENSE](https://github.com/nodejs/node/blob/HEAD/LICENSE) for the full license text.
 
 [Code of Conduct]: https://github.com/nodejs/admin/blob/HEAD/CODE_OF_CONDUCT.md
 [Contributing to the project]: CONTRIBUTING.md
