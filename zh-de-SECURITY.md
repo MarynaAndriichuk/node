@@ -18,7 +18,7 @@ Security bugs in third party modules should be reported to their respective main
 
 Details regarding this process can be found in the [Security Working Group repository](https://github.com/nodejs/security-wg/blob/HEAD/processes/third_party_vuln_process.md).
 
-Thank you for improving the security of Node.js and its ecosystem. Your efforts and responsible disclosure are greatly appreciated and will be acknowledged. Your efforts and responsible disclosure are greatly appreciated and will be acknowledged.
+Thank you for improving the security of Node.js and its ecosystem. Your efforts and responsible disclosure are greatly appreciated and will be acknowledged.
 
 ## Disclosure policy
 
