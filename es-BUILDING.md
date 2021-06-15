@@ -4,7 +4,7 @@ Depending on what platform or features you need, the build process may differ. A
 
 If you can reproduce a test failure, search for it in the [Node.js issue tracker](https://github.com/nodejs/node/issues) or file a new issue.
 
-## Table of contents!
+## Table of contents
 
 * [Supported platforms](#supported-platforms)
   * [Input](#input)
