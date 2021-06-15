@@ -58,7 +58,7 @@ If you can reproduce a test failure, search for it in the [Node.js issue tracker
 
 This list of supported platforms is current as of the branch/release to which it belongs.
 
-### Eingabe
+### Input
 
 Node.js relies on V8 and libuv. We adopt a subset of their supported platforms.
 
