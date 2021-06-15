@@ -295,7 +295,7 @@ For information about the governance of the Node.js project, see [GOVERNANCE.md]
 * [iarna](https://github.com/iarna) - **Rebecca Turner** &lt;me@re-becca.org&gt;
 * [imran-iq](https://github.com/imran-iq) - **Imran Iqbal** &lt;imran@imraniqbal.org&gt;
 * [Olegas](https://github.com/Olegas) - **Oleg Elifantiev** &lt;oleg@elifantiev.ru&gt;
-* [imyller](https://github.com/imyller) - **Ilkka Myller** &lt;ilkka.myller@nodefield.com&gt;
+* [isaacs](https://github.com/isaacs) - **Isaac Z. Schlueter** &lt;i@izs.me&gt;
 * [thlorenz](https://github.com/thlorenz) - **Thorsten Lorenz** &lt;thlorenz@gmx.de&gt;
 * [jasongin](https://github.com/jasongin) - **Jason Ginchereau** &lt;jasongin@microsoft.com&gt;
 * [jbergstroem](https://github.com/jbergstroem) - **Johan Bergström** &lt;bugs@bergstroem.nu&gt;
