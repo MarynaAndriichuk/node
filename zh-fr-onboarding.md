@@ -84,8 +84,8 @@ The project has two venues for real-time discussion:
 ## Reviewing PRs
 
 * The primary goal is for the codebase to improve.
-* Secondary (but not far off) is for the person submitting code to succeed. A pull request from a new contributor is an opportunity to grow the community. A pull request from a new contributor is an opportunity to grow the community.
-* Review a bit at a time. Review a bit at a time. Do not overwhelm new contributors.
+* Secondary (but not far off) is for the person submitting code to succeed. A pull request from a new contributor is an opportunity to grow the community.
+* Review a bit at a time. Do not overwhelm new contributors.
   * It is tempting to micro-optimize. Don't succumb to that temptation. We change V8 often. Techniques that provide improved performance today may be unnecessary in the future.
 * Be aware: Your opinion carries a lot of weight!
 * Nits (requests for small changes that are not essential) are fine, but try to avoid stalling the pull request.
@@ -114,13 +114,13 @@ The project has two venues for real-time discussion:
 
 * Continuous Integration (CI) Testing:
   * [https://ci.nodejs.org/](https://ci.nodejs.org/)
-    * It is not automatically run. You need to start it manually. You need to start it manually.
-  * Log in on CI is integrated with GitHub. Try to log in now! Try to log in now!
-  * You will be using `node-test-pull-request` most of the time. Go there now! Go there now!
+    * It is not automatically run. You need to start it manually.
+  * Log in on CI is integrated with GitHub. Try to log in now!
+  * You will be using `node-test-pull-request` most of the time. Go there now!
     * Consider bookmarking it: <https://ci.nodejs.org/job/node-test-pull-request/>
-  * To get to the form to start a job, click on `Build with Parameters`. (If you don't see it, that probably means you are not logged in!) Click it now! (If you don't see it, that probably means you are not logged in!) Click it now!
+  * To get to the form to start a job, click on `Build with Parameters`. (If you don't see it, that probably means you are not logged in!) Click it now!
   * To start CI testing from this screen, you need to fill in two elements on the form:
-    * The `CERTIFY_SAFE` box should be checked. By checking it, you are indicating that you have reviewed the code you are about to test and you are confident that it does not contain any malicious code. (We don't want people hijacking our CI hosts to attack other hosts on the internet, for example!) By checking it, you are indicating that you have reviewed the code you are about to test and you are confident that it does not contain any malicious code. (We don't want people hijacking our CI hosts to attack other hosts on the internet, for example!)
+    * The `CERTIFY_SAFE` box should be checked. By checking it, you are indicating that you have reviewed the code you are about to test and you are confident that it does not contain any malicious code. (We don't want people hijacking our CI hosts to attack other hosts on the internet, for example!)
     * The `PR_ID` box should be filled in with the number identifying the pull request containing the code you wish to test. For example, if the URL for the pull request is `https://github.com/nodejs/node/issues/7006`, then put `7006` in the `PR_ID`.
     * The remaining elements on the form are typically unchanged.
   * If you need help with something CI-related:
@@ -144,13 +144,13 @@ Commits in one PR that belong to one logical change should be squashed. It is ra
 * Optionally, include your personal pronouns.
 * Add the `Fixes: <collaborator-nomination-issue-url>` to the commit message so that when the commit lands, the nomination issue url will be automatically closed.
 * Label your pull request with the `doc`, `notable-change`, and `fast-track` labels.
-* Run CI on the PR. Run CI on the PR. Use the `node-test-pull-request` CI task.
+* Run CI on the PR. Use the `node-test-pull-request` CI task.
 * After two Collaborator approvals for the change and two Collaborator approvals for fast-tracking, land the PR.
 * Leave a comment in the PR: `Please 👍 this comment to approve fast-tracking`.
 * If there are not enough approvals within a reasonable time, consider the single approval of the onboarding TSC member sufficient, and land the PR.
   * Be sure to add the `PR-URL: <full-pr-url>` and appropriate `Reviewed-By:` metadata.
   * [`node-core-utils`][] automates the generation of metadata and the landing process. See the documentation of [`git-node`][].
-  * [`core-validate-commit`][] automates the validation of commit messages. This will be run during `git node land --final` of the [`git-node`][] command. This will be run during `git node land --final` of the [`git-node`][] command.
+  * [`core-validate-commit`][] automates the validation of commit messages. This will be run during `git node land --final` of the [`git-node`][] command.
 
 ## Final notes
 
