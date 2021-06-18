@@ -9,9 +9,9 @@
   </a>
 </p>
 
-Node.js is an open-source, cross-platform, JavaScript runtime environment. It executes JavaScript code outside of a browser. For more information on using Node.js, see the [Node.js Website][].
+Node.js is an open-source, cross-platform, JavaScript runtime environment. It executes JavaScript code outside of a browser. For more information on using Node.js, see the [Node.js Website][]. It executes JavaScript code outside of a browser. For more information on using Node.js, see the [Node.js Website][].
 
-The Node.js project uses an [open governance model](./GOVERNANCE.md). The [OpenJS Foundation][] provides support for the project.
+The Node.js project uses an [open governance model](./GOVERNANCE.md). The [OpenJS Foundation][] provides support for the project. The [OpenJS Foundation][] provides support for the project.
 
 **This project is bound by a [Code of Conduct][].**
 
@@ -43,7 +43,7 @@ Looking for help? Check out the [instructions for getting support](.github/SUPPO
 * **LTS**: Releases that receive Long Term Support, with a focus on stability and security. Every even-numbered major version will become an LTS release. LTS releases receive 12 months of _Active LTS_ support and a further 18 months of _Maintenance_. LTS release lines have alphabetically-ordered code names, beginning with v4 Argon. There are no breaking changes or feature additions, except in some special circumstances.
 * **Nightly**: Code from the Current branch built every 24-hours when there are changes. Use with caution.
 
-Current and LTS releases follow [Semantic Versioning](https://semver.org). A member of the Release Team [signs](#release-keys) each Current and LTS release. For more information, see the [Release README](https://github.com/nodejs/Release#readme).
+Current and LTS releases follow [Semantic Versioning](https://semver.org). A member of the Release Team [signs](#release-keys) each Current and LTS release. For more information, see the [Release README](https://github.com/nodejs/Release#readme). A member of the Release Team [signs](#release-keys) each Current and LTS release. For more information, see the [Release README](https://github.com/nodejs/Release#readme).
 
 ### Download
 
@@ -61,7 +61,7 @@ Each directory name and filename contains a date (in UTC) and the commit SHA at 
 
 #### API documentation
 
-Documentation for the latest Current release is at <https://nodejs.org/api/>. Version-specific documentation is available in each release directory in the _docs_ subdirectory. Version-specific documentation is also at <https://nodejs.org/download/docs/>.
+Documentation for the latest Current release is at <https://nodejs.org/api/>. Version-specific documentation is available in each release directory in the _docs_ subdirectory. Version-specific documentation is also at <https://nodejs.org/download/docs/>. Version-specific documentation is available in each release directory in the _docs_ subdirectory. Version-specific documentation is also at <https://nodejs.org/download/docs/>.
 
 ### Verifying binaries
 
