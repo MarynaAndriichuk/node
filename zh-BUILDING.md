@@ -60,7 +60,7 @@ This list of supported platforms is current as of the branch/release to which it
 
 ### Input
 
-Node.js relies on V8 and libuv. We adopt a subset of their supported platforms.
+Node.js relies on V8 and libuv. We adopt a subset of their supported platforms. We adopt a subset of their supported platforms.
 
 ### Strategy
 
@@ -70,7 +70,7 @@ There are three support tiers:
 * **Tier 2**: These platforms represent smaller segments of the Node.js user base. The Node.js Build Working Group maintains infrastructure for full test coverage. Test failures on tier 2 platforms will block releases. Infrastructure issues may delay the release of binaries for these platforms.
 * **Experimental**: May not compile or test suite may not pass. The core team does not create releases for these platforms. Test failures on experimental platforms do not block releases. Contributions to improve support for these platforms are welcome.
 
-Platforms may move between tiers between major release lines. The table below will reflect those changes.
+Platforms may move between tiers between major release lines. The table below will reflect those changes. The table below will reflect those changes.
 
 ### Platform list
 
@@ -102,9 +102,9 @@ Node.js does not support a platform version if a vendor has expired support for 
 
 <em id="fn1">1</em>: GCC 8 is not provided on the base platform. Users will need the [Toolchain test builds PPA](https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/test?field.series_filter=xenial) or similar to source a newer compiler.
 
-<em id="fn2">2</em>: GCC 8 is not provided on the base platform. Users will need the [devtoolset-8](https://www.softwarecollections.org/en/scls/rhscl/devtoolset-8/) or later to source a newer compiler.
+<em id="fn2">2</em>: GCC 8 is not provided on the base platform. Users will need the [devtoolset-8](https://www.softwarecollections.org/en/scls/rhscl/devtoolset-8/) or later to source a newer compiler. Users will need the [devtoolset-8](https://www.softwarecollections.org/en/scls/rhscl/devtoolset-8/) or later to source a newer compiler.
 
-<em id="fn3">3</em>: Older kernel versions may work for ARM64. However the Node.js test infrastructure only tests >= 4.5.
+<em id="fn3">3</em>: Older kernel versions may work for ARM64. However the Node.js test infrastructure only tests >= 4.5. However the Node.js test infrastructure only tests >= 4.5.
 
 <em id="fn4">4</em>: On Windows, running Node.js in Windows terminal emulators like `mintty` requires the usage of [winpty](https://github.com/rprichard/winpty) for the tty channels to work (e.g. `winpty node.exe script.js`). In "Git bash" if you call the node shell alias (`node` without the `.exe` extension), `winpty` is used automatically.
 
@@ -166,7 +166,7 @@ Please refer to <https://www.openssl.org/docs/man1.1.1/man3/OPENSSL_ia32cap.html
 
 ### Previous versions of this document
 
-Supported platforms and toolchains change with each major version of Node.js. This document is only valid for the current major version of Node.js. Consult previous versions of this document for older versions of Node.js:
+Supported platforms and toolchains change with each major version of Node.js. This document is only valid for the current major version of Node.js. Consult previous versions of this document for older versions of Node.js: This document is only valid for the current major version of Node.js. Consult previous versions of this document for older versions of Node.js:
 
 * [Node.js 14](https://github.com/nodejs/node/blob/v14.x/BUILDING.md)
 * [Node.js 12](https://github.com/nodejs/node/blob/v12.x/BUILDING.md)
@@ -252,7 +252,7 @@ $ make -j4 test
 
 `make -j4 test` does a full check on the codebase, including running linters and documentation tests.
 
-Make sure the linter does not report any issues and that all tests pass. Please do not submit patches that fail either check.
+Make sure the linter does not report any issues and that all tests pass. Please do not submit patches that fail either check. Please do not submit patches that fail either check.
 
 If you want to run the linter without running tests, use `make lint`/`vcbuild lint`. It will lint JavaScript, C++, and Markdown files.
 
@@ -292,7 +292,7 @@ You can use [node-code-ide-configs](https://github.com/nodejs/node-code-ide-conf
 
 #### Running coverage
 
-It's good practice to ensure any code you add or change is covered by tests. You can do so by running the test suite with coverage enabled:
+It's good practice to ensure any code you add or change is covered by tests. You can do so by running the test suite with coverage enabled: You can do so by running the test suite with coverage enabled:
 
 ```console
 $ ./configure --coverage
@@ -323,7 +323,7 @@ $ NODE_V8_COVERAGE=coverage/tmp python tools/test.py -J --mode=release child-pro
 $ make coverage-report-js
 ```
 
-The `make coverage` command downloads some tools to the project root directory. To clean up after generating the coverage reports:
+The `make coverage` command downloads some tools to the project root directory. To clean up after generating the coverage reports: To clean up after generating the coverage reports:
 
 ```console
 $ make coverage-clean
@@ -433,7 +433,7 @@ The resulting binary won't include any JS files and will try to load them from t
 
 #### Troubleshooting Unix and macOS builds
 
-Stale builds can sometimes result in `file not found` errors while building. This and some other problems can be resolved with `make distclean`. The `distclean` recipe aggressively removes build artifacts. You will need to build again (`make -j4`). Since all build artifacts have been removed, this rebuild may take a lot more time than previous builds. Additionally, `distclean` removes the file that stores the results of `./configure`. If you ran `./configure` with non-default options (such as `--debug`), you will need to run it again before invoking `make -j4`.
+Stale builds can sometimes result in `file not found` errors while building. This and some other problems can be resolved with `make distclean`. The `distclean` recipe aggressively removes build artifacts. You will need to build again (`make -j4`). Since all build artifacts have been removed, this rebuild may take a lot more time than previous builds. Additionally, `distclean` removes the file that stores the results of `./configure`. If you ran `./configure` with non-default options (such as `--debug`), you will need to run it again before invoking `make -j4`. This and some other problems can be resolved with `make distclean`. The `distclean` recipe aggressively removes build artifacts. You will need to build again (`make -j4`). Since all build artifacts have been removed, this rebuild may take a lot more time than previous builds. Additionally, `distclean` removes the file that stores the results of `./configure`. If you ran `./configure` with non-default options (such as `--debug`), you will need to run it again before invoking `make -j4`.
 
 ### Windows
 
@@ -634,6 +634,10 @@ After the FIPS module and configuration file have been installed by the above in
 default = default_sect
 # The fips section name should match the section name inside the
 # included /path/to/install/dir/ssl/fipsmodule.cnf.
+fips = fips_sect
+
+[default_sect]
+activate = 1
 fips = fips_sect
 
 [default_sect]
