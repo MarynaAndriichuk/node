@@ -27,16 +27,16 @@ See:
 
 ## Collaborators
 
-Node.js Core Collaborators maintain the [nodejs/node][] GitHub repository. The GitHub team for Node.js Core Collaborators is @nodejs/collaborators. Collaborators have:
+Node.js Core Collaborators maintain the [nodejs/node][] GitHub repository. The GitHub team for Node.js Core Collaborators is @nodejs/collaborators. Collaborators have: The GitHub team for Node.js Core Collaborators is @nodejs/collaborators. Collaborators have:
 
 * Commit access to the [nodejs/node][] repository
 * Access to the Node.js continuous integration (CI) jobs
 
 Both Collaborators and non-Collaborators may propose changes to the Node.js source code. The mechanism to propose such a change is a GitHub pull request. Collaborators review and merge (_land_) pull requests.
 
-Two Collaborators must approve a pull request before the pull request can land. (One Collaborator approval is enough if the pull request has been open for more than 7 days.) Approving a pull request indicates that the Collaborator accepts responsibility for the change. Approval must be from Collaborators who are not authors of the change.
+Two Collaborators must approve a pull request before the pull request can land. (One Collaborator approval is enough if the pull request has been open for more than 7 days.) Approving a pull request indicates that the Collaborator accepts responsibility for the change. Approval must be from Collaborators who are not authors of the change. (One Collaborator approval is enough if the pull request has been open for more than 7 days.) Approving a pull request indicates that the Collaborator accepts responsibility for the change. Approval must be from Collaborators who are not authors of the change.
 
-If a Collaborator opposes a proposed change, then the change cannot land. The exception is if the TSC votes to approve the change despite the opposition. Usually, involving the TSC is unnecessary. Often, discussions or further changes result in Collaborators removing their opposition.
+If a Collaborator opposes a proposed change, then the change cannot land. The exception is if the TSC votes to approve the change despite the opposition. Usually, involving the TSC is unnecessary. Often, discussions or further changes result in Collaborators removing their opposition. The exception is if the TSC votes to approve the change despite the opposition. Usually, involving the TSC is unnecessary. Often, discussions or further changes result in Collaborators removing their opposition.
 
 See:
 
@@ -55,7 +55,7 @@ The TSC can remove inactive Collaborators or provide them with _Emeritus_ status
 
 ## Technical Steering Committee
 
-A subset of the Collaborators forms the Technical Steering Committee (TSC). The TSC has final authority over this project, including:
+A subset of the Collaborators forms the Technical Steering Committee (TSC). A subset of the Collaborators forms the Technical Steering Committee (TSC). The TSC has final authority over this project, including:
 
 * Technical direction
 * Project governance and process (including this policy)
@@ -92,7 +92,7 @@ The TSC seeks to resolve as many issues as possible outside meetings using [the 
 
 Existing Collaborators can nominate someone to become a Collaborator. Nominees should have significant and valuable contributions across the Node.js organization.
 
-To nominate a new Collaborator, open an issue in the [nodejs/node][] repository. Provide a summary of the nominee's contributions. For example:
+To nominate a new Collaborator, open an issue in the [nodejs/node][] repository. Provide a summary of the nominee's contributions. For example: Provide a summary of the nominee's contributions. For example:
 
 * Commits in the [nodejs/node][] repository.
   * Use the link `https://github.com/nodejs/node/commits?author=GITHUB_ID`
@@ -112,7 +112,7 @@ To nominate a new Collaborator, open an issue in the [nodejs/node][] repository.
 
 Mention @nodejs/collaborators in the issue to notify other Collaborators about the nomination.
 
-The nomination passes if no Collaborators oppose it after one week. Otherwise, the nomination fails.
+The nomination passes if no Collaborators oppose it after one week. Otherwise, the nomination fails. Otherwise, the nomination fails.
 
 There are steps a nominator can take in advance to make a nomination as frictionless as possible. To request feedback from other Collaborators in private, use the [Collaborators discussion page][] (which only Collaborators may view). A nominator may also work with the nominee to improve their contribution profile.
 
@@ -120,7 +120,7 @@ Collaborators might overlook someone with valuable contributions. In that case, 
 
 ### Onboarding
 
-After the nomination passes, a TSC member onboards the new Collaborator. See [the onboarding guide](./onboarding.md) for details of the onboarding process.
+After the nomination passes, a TSC member onboards the new Collaborator. See [the onboarding guide](./onboarding.md) for details of the onboarding process. See [the onboarding guide](./onboarding.md) for details of the onboarding process.
 
 ## Consensus seeking process
 
