@@ -34,7 +34,7 @@ Node.js Core Collaborators maintain the [nodejs/node][] GitHub repository. The G
 
 Both Collaborators and non-Collaborators may propose changes to the Node.js source code. The mechanism to propose such a change is a GitHub pull request. Collaborators review and merge (_land_) pull requests.
 
-Two Collaborators must approve a pull request before the pull request can land. (One Collaborator approval is enough if the pull request has been open for more than 7 days.) Approving a pull request indicates that the Collaborator accepts responsibility for the change. Approving a pull request indicates that the Collaborator accepts responsibility for the change. Approval must be from Collaborators who are not authors of the change.
+Two Collaborators must approve a pull request before the pull request can land. (One Collaborator approval is enough if the pull request has been open for more than 7 days.) Approving a pull request indicates that the Collaborator accepts responsibility for the change. Approval must be from Collaborators who are not authors of the change.
 
 If a Collaborator opposes a proposed change, then the change cannot land. The exception is if the TSC votes to approve the change despite the opposition. Usually, involving the TSC is unnecessary. Often, discussions or further changes result in Collaborators removing their opposition.
 
