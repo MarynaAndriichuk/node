@@ -4,9 +4,9 @@ Depending on what platform or features you need, the build process may differ. A
 
 If you can reproduce a test failure, search for it in the [Node.js issue tracker](https://github.com/nodejs/node/issues) or file a new issue.
 
-## Table of contents
+## Table of contents!
 
-* [Unterstützte Platformen](#supported-platforms)
+* [Supported platforms](#supported-platforms)
   * [Input](#input)
   * [Strategy](#strategy)
   * [Platform list](#platform-list)
@@ -54,7 +54,7 @@ If you can reproduce a test failure, search for it in the [Node.js issue tracker
   * [Windows](#windows-5)
 * [Note for downstream distributors of Node.js](#note-for-downstream-distributors-of-nodejs)
 
-## Unterstützte Platformen
+## Supported platforms
 
 This list of supported platforms is current as of the branch/release to which it belongs.
 
