@@ -4,7 +4,7 @@ Depending on what platform or features you need, the build process may differ. A
 
 If you can reproduce a test failure, search for it in the [Node.js issue tracker](https://github.com/nodejs/node/issues) or file a new issue.
 
-## Table of contents!
+## Table of contents
 
 * [Supported platforms](#supported-platforms)
   * [Input](#input)
@@ -474,7 +474,7 @@ Alternatively, you can use PowerShell. Run those commands from an elevated Power
 
 ```powershell
 Set-ExecutionPolicy Unrestricted -Force
-iex ((New-Object System.Net.WebClient).DownloadString('https://boxstarter.org/bootstrapper.ps1'))
+iex ((New-Object System. Net.WebClient).DownloadString('https://boxstarter.org/bootstrapper.ps1'))
 get-boxstarter -Force
 Install-BoxstarterPackage https://raw.githubusercontent.com/nodejs/node/HEAD/tools/bootstrap/windows_boxstarter -DisableReboots
 ```
