@@ -1,36 +1,36 @@
-# Contributing to Node.js
+# 为 Node.js 贡献
 
-* [Code of Conduct](#code-of-conduct)
-* [Issues](#issues)
-* [Pull Requests](#pull-requests)
-* [Developer's Certificate of Origin 1.1](#developers-certificate-of-origin)
+* [行为守则](#code-of-conduct)
+* [议 题](#issues)
+* [拉取请求](#pull-requests)
+* [开发者原产地证书 1.1](#developers-certificate-of-origin)
 
-## [Code of Conduct](./doc/guides/contributing/code-of-conduct.md)
+## [行为守则](./doc/guides/contributing/code-of-conduct.md)
 
 The Node.js project has a [Code of Conduct](https://github.com/nodejs/admin/blob/HEAD/CODE_OF_CONDUCT.md) to which all contributors must adhere.
 
-See [details on our policy on Code of Conduct](./doc/guides/contributing/code-of-conduct.md).
+查看 [关于我们行为守则政策的详细信息](./doc/guides/contributing/code-of-conduct.md)。
 
-## [Issues](./doc/guides/contributing/issues.md)
+## [议 题](./doc/guides/contributing/issues.md)
 
-* [Asking for General Help](./doc/guides/contributing/issues.md#asking-for-general-help)
-* [Discussing non-technical topics](./doc/guides/contributing/issues.md#discussing-non-technical-topics)
-* [Submitting a Bug Report](./doc/guides/contributing/issues.md#submitting-a-bug-report)
-* [Triaging a Bug Report](./doc/guides/contributing/issues.md#triaging-a-bug-report)
+* [请求常规帮助](./doc/guides/contributing/issues.md#asking-for-general-help)
+* [讨论非技术性议题](./doc/guides/contributing/issues.md#discussing-non-technical-topics)
+* [提交错误报告](./doc/guides/contributing/issues.md#submitting-a-bug-report)
+* [正在尝试错误报告](./doc/guides/contributing/issues.md#triaging-a-bug-report)
 
-## [Pull Requests](./doc/guides/contributing/pull-requests.md)
+## [拉取请求](./doc/guides/contributing/pull-requests.md)
 
-* [Dependencies](./doc/guides/contributing/pull-requests.md#dependencies)
-* [Setting up your local environment](./doc/guides/contributing/pull-requests.md#setting-up-your-local-environment)
-* [The Process of Making Changes](./doc/guides/contributing/pull-requests.md#the-process-of-making-changes)
-* [Reviewing Pull Requests](./doc/guides/contributing/pull-requests.md#reviewing-pull-requests)
-* [Notes](./doc/guides/contributing/pull-requests.md#notes)
+* [依赖关系](./doc/guides/contributing/pull-requests.md#dependencies)
+* [设置您的本地环境](./doc/guides/contributing/pull-requests.md#setting-up-your-local-environment)
+* [变革进程](./doc/guides/contributing/pull-requests.md#the-process-of-making-changes)
+* [正在审查拉取请求](./doc/guides/contributing/pull-requests.md#reviewing-pull-requests)
+* [注](./doc/guides/contributing/pull-requests.md#notes)
 
 <a id="developers-certificate-of-origin"></a>
 
-## Developer's Certificate of Origin 1.1
+## 开发者原产地证书 1.1
 
-By making a contribution to this project, I certify that:
+我通过为这一项目提供捐助，证明：
 
  (a) The contribution was created in whole or in part by me and I have the right to submit it under the open source license indicated in the file; or
 
