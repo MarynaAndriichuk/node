@@ -9,65 +9,65 @@
   </a>
 </p>
 
-Node.js is an open-source, cross-platform, JavaScript runtime environment. It executes JavaScript code outside of a browser. For more information on using Node.js, see the [Node.js Website][].
+Node.js是一个开源、跨平台的 JavaScript 运行环境。 它 在浏览器之外执行 JavaScript 代码。 关于使用 Node.js的更多信息，见 [Node.js网站][]。
 
-The Node.js project uses an [open governance model](./GOVERNANCE.md). The [OpenJS Foundation][] provides support for the project.
+Node.js项目使用 [开放治理模式](./GOVERNANCE.md)。 [OpenJS Foundation][] 为项目提供支持。
 
-**This project is bound by a [Code of Conduct][].**
+**此项目受 [行为准则][] 的约束。**
 
-# Table of contents
+# 目录
 
-* [Support](#support)
-* [Release types](#release-types)
-  * [Download](#download)
-    * [Current and LTS releases](#current-and-lts-releases)
-    * [Nightly releases](#nightly-releases)
-    * [API documentation](#api-documentation)
-  * [Verifying binaries](#verifying-binaries)
+* [支持](#support)
+* [发布类型](#release-types)
+  * [下载](#download)
+    * [当前版本和 LTS](#current-and-lts-releases)
+    * [每晚发布](#nightly-releases)
+    * [API 文档](#api-documentation)
+  * [正在验证二进制文件](#verifying-binaries)
 * [Building Node.js](#building-nodejs)
-* [Security](#security)
-* [Contributing to Node.js](#contributing-to-nodejs)
-* [Current project team members](#current-project-team-members)
-  * [TSC (Technical Steering Committee)](#tsc-technical-steering-committee)
-  * [Collaborators](#collaborators)
-  * [Release keys](#release-keys)
-* [License](#license)
+* [安全](#security)
+* [为 Node.js 贡献](#contributing-to-nodejs)
+* [当前项目团队成员](#current-project-team-members)
+  * [TSC（技术指导委员会）](#tsc-technical-steering-committee)
+  * [协作者](#collaborators)
+  * [释放密钥](#release-keys)
+* [许可协议](#license)
 
-## Support
+## 支持
 
-Looking for help? Check out the [instructions for getting support](.github/SUPPORT.md).
+寻找帮助吗？ Looking for help? Check out the [instructions for getting support](.github/SUPPORT.md).
 
-## Release types
+## 发布类型
 
-* **Current**: Under active development. Code for the Current release is in the branch for its major version number (for example, [v15.x](https://github.com/nodejs/node/tree/v15.x)). Node.js releases a new major version every 6 months, allowing for breaking changes. This happens in April and October every year. Releases appearing each October have a support life of 8 months. Releases appearing each April convert to LTS (see below) each October.
-* **LTS**: Releases that receive Long Term Support, with a focus on stability and security. Every even-numbered major version will become an LTS release. LTS releases receive 12 months of _Active LTS_ support and a further 18 months of _Maintenance_. LTS release lines have alphabetically-ordered code names, beginning with v4 Argon. There are no breaking changes or feature additions, except in some special circumstances.
-* **Nightly**: Code from the Current branch built every 24-hours when there are changes. Use with caution.
+* **当前**: 正在活动开发中。 **Current**: Under active development. Code for the Current release is in the branch for its major version number (for example, [v15.x](https://github.com/nodejs/node/tree/v15.x)). Node.js releases a new major version every 6 months, allowing for breaking changes. This happens in April and October every year. Releases appearing each October have a support life of 8 months. Releases appearing each April convert to LTS (see below) each October. Node.js 每隔6个月发布一个新的 个主要版本，允许出现突破。 This happens in April and October every year. 每年10月的释放都能获得支持 8个月的生命。 每四月份的释放都会转换成低温室气体(见下文)，每年10月
+* **LTS**: Releases that receive Long Term Support, with a focus on stability and security. Every even-numbered major version will become an LTS release. LTS releases receive 12 months of _Active LTS_ support and a further 18 months of _Maintenance_. LTS release lines have alphabetically-ordered code names, beginning with v4 Argon. There are no breaking changes or feature additions, except in some special circumstances. 每个偶数的主要版本都将成为LTS版本。 LTS 发布会得到 _活跃的 LTS_ 支持的12个月以及 _维护_的另外18个月 LTS 发行行有按字母顺序排序的代码名， 以v4 Argon开始。 除了某些特殊情况外，没有任何突破性的更改或特征添加，
+* **Nightly**: Code from the Current branch built every 24-hours when there are changes. Use with caution. 谨慎使用。
 
-Current and LTS releases follow [Semantic Versioning](https://semver.org). A member of the Release Team [signs](#release-keys) each Current and LTS release. For more information, see the [Release README](https://github.com/nodejs/Release#readme).
+当前版本和 LTS 版本遵循 [语义版本](https://semver.org)。 发布团队的 名成员 [签名](#release-keys) 当前发布和 LTS 发布。 欲了解更多信息，请参阅 [README](https://github.com/nodejs/Release#readme)。
 
-### Download
+### 下载
 
 Binaries, installers, and source tarballs are available at <https://nodejs.org/en/download/>.
 
-#### Current and LTS releases
+#### 当前版本和 LTS
 <https://nodejs.org/download/release/>
 
-The [latest](https://nodejs.org/download/release/latest/) directory is an alias for the latest Current release. The latest-_codename_ directory is an alias for the latest release from an LTS line. For example, the [latest-fermium](https://nodejs.org/download/release/latest-fermium/) directory contains the latest Fermium (Node.js 14) release.
+The [latest](https://nodejs.org/download/release/latest/) directory is an alias for the latest Current release. The latest-_codename_ directory is an alias for the latest release from an LTS line. For example, the [latest-fermium](https://nodejs.org/download/release/latest-fermium/) directory contains the latest Fermium (Node.js 14) release. 最晚的 -_代号_ 目录是一个 LTS 行最新版本的 别名。 例如， [最新的铁mium](https://nodejs.org/download/release/latest-fermium/) 目录 包含最新的 Fermium (Node.js 14)。
 
-#### Nightly releases
+#### 每晚发布
 <https://nodejs.org/download/nightly/>
 
 Each directory name and filename contains a date (in UTC) and the commit SHA at the HEAD of the release.
 
-#### API documentation
+#### API 文档
 
-Documentation for the latest Current release is at <https://nodejs.org/api/>. Version-specific documentation is available in each release directory in the _docs_ subdirectory. Version-specific documentation is also at <https://nodejs.org/download/docs/>.
+最新版本的文档是 <https://nodejs.org/api/>。 版本专用文档可在 _docs_ 子目录中的每个发布目录中查阅。 Version-specific documentation is also at <https://nodejs.org/download/docs/>.
 
-### Verifying binaries
+### 正在验证二进制文件
 
 Download directories contain a `SHASUMS256.txt` file with SHA checksums for the files.
 
-To download `SHASUMS256.txt` using `curl`:
+要下载 `SHASUMS256.txt` 使用 `曲线`:
 
 ```console
 $ curl -O https://nodejs.org/dist/vx.y.z/SHASUMS256.txt
@@ -79,15 +79,15 @@ To check that a downloaded file matches the checksum, run it through `sha256sum`
 $ grep node-vx.y.z.tar.gz SHASUMS256.txt | sha256sum -c -
 ```
 
-For Current and LTS, the GPG detached signature of `SHASUMS256.txt` is in `SHASUMS256.txt.sig`. You can use it with `gpg` to verify the integrity of `SHASUMS256.txt`. You will first need to import [the GPG keys of individuals authorized to create releases](#release-keys). To import the keys:
+For Current and LTS, the GPG detached signature of `SHASUMS256.txt` is in `SHASUMS256.txt.sig`. You can use it with `gpg` to verify the integrity of `SHASUMS256.txt`. You will first need to import [the GPG keys of individuals authorized to create releases](#release-keys). To import the keys: 您可以使用 `gpg` 验证 `SHASUMS256.txt` 的完整性。 您将首先需要导入 [授权创建版本的个人的 GPG 密钥](#release-keys) 要 导入密钥：
 
 ```console
-$ gpg --keyserver pool.sks-keyservers.net --recv-keys DD8F2338BAE7501E3DD5AC78C273792F7D83545D
+$ gpg --keyserver pool.sks-keyservers.net --recv-keys DD8F2338BAE7501E3DDD5AC78C273792F7D83545D
 ```
 
-See the bottom of this README for a full script to import active release keys.
+请参阅此README底部以获取一个完整的脚本来导入活动释放密钥。
 
-Next, download the `SHASUMS256.txt.sig` for the release:
+接下来，下载 `SHASUMS256.txt.sig` 版本：
 
 ```console
 $ curl -O https://nodejs.org/dist/vx.y.z/SHASUMS256.txt.sig
@@ -99,22 +99,22 @@ Then use `gpg --verify SHASUMS256.txt.sig SHASUMS256.txt` to verify the file's s
 
 See [BUILDING.md](BUILDING.md) for instructions on how to build Node.js from source and a list of supported platforms.
 
-## Security
+## 安全
 
 For information on reporting security vulnerabilities in Node.js, see [SECURITY.md](./SECURITY.md).
 
-## Contributing to Node.js
+## 为 Node.js 贡献
 
-* [Contributing to the project][]
-* [Working Groups][]
-* [Strategic Initiatives][]
-* [Technical values and prioritization][]
+* [为该项目做贡献][]
+* [工 作 组][]
+* [战略倡议][]
+* [A. 技术价值和优先次序][]
 
-## Current project team members
+## 当前项目团队成员
 
 For information about the governance of the Node.js project, see [GOVERNANCE.md](./GOVERNANCE.md).
 
-### TSC (Technical Steering Committee)
+### TSC（技术指导委员会）
 
 <!--lint disable prohibited-strings-->
 * [aduh95](https://github.com/aduh95) - **Antoine du Hamel** &lt;duhamelantoine1995@gmail.com&gt; (he/him)
@@ -140,13 +140,13 @@ For information about the governance of the Node.js project, see [GOVERNANCE.md]
 * [tniessen](https://github.com/tniessen) - **Tobias Nießen** &lt;tniessen@tnie.de&gt;
 * [Trott](https://github.com/Trott) - **Rich Trott** &lt;rtrott@gmail.com&gt; (he/him)
 
-### TSC emeriti
+### 海训方案
 
 * [addaleax](https://github.com/addaleax) - **Anna Henningsen** &lt;anna@addaleax.net&gt; (she/her)
 * [bnoordhuis](https://github.com/bnoordhuis) - **Ben Noordhuis** &lt;info@bnoordhuis.nl&gt;
 * [chrisdickinson](https://github.com/chrisdickinson) - **Chris Dickinson** &lt;christopher.s.dickinson@gmail.com&gt;
 * [evanlucas](https://github.com/evanlucas) - **Evan Lucas** &lt;evanlucas@me.com&gt; (he/him)
-* [Fishrock123](https://github.com/Fishrock123) - **Jeremiah Senkpiel** &lt;fishrock123@rocketmail.com&gt; (he/they)
+* [Fishrock123](https://github.com/Fishrock123) - **Jeremiah Senkpiel** &lt;fishrock123@rocketmail.com&gt;  (he/they)
 * [gibfahn](https://github.com/gibfahn) - **Gibson Fahnestock** &lt;gibfahn@gmail.com&gt; (he/him)
 * [indutny](https://github.com/indutny) - **Fedor Indutny** &lt;fedor.indutny@gmail.com&gt;
 * [isaacs](https://github.com/isaacs) - **Isaac Z. Schlueter** &lt;i@izs.me&gt;
@@ -163,7 +163,7 @@ For information about the governance of the Node.js project, see [GOVERNANCE.md]
 * [TimothyGu](https://github.com/TimothyGu) - **Tiancheng "Timothy" Gu** &lt;timothygu99@gmail.com&gt; (he/him)
 * [trevnorris](https://github.com/trevnorris) - **Trevor Norris** &lt;trev.norris@gmail.com&gt;
 
-### Collaborators
+### 协作者
 
 * [addaleax](https://github.com/addaleax) - **Anna Henningsen** &lt;anna@addaleax.net&gt; (she/her)
 * [aduh95](https://github.com/aduh95) - **Antoine du Hamel** &lt;duhamelantoine1995@gmail.com&gt; (he/him)
@@ -186,7 +186,7 @@ For information about the governance of the Node.js project, see [GOVERNANCE.md]
 * [cjihrig](https://github.com/cjihrig) - **Colin Ihrig** &lt;cjihrig@gmail.com&gt; (he/him)
 * [codebytere](https://github.com/codebytere) - **Shelley Vohr** &lt;codebytere@gmail.com&gt; (she/her)
 * [danbev](https://github.com/danbev) - **Daniel Bevenius** &lt;daniel.bevenius@gmail.com&gt; (he/him)
-* [danielleadams](https://github.com/danielleadams) - **Danielle Adams** &lt;adamzdanielle@gmail.com&gt; (she/her)
+* [Danielleleleadams](https://github.com/danielleadams) - **Danielle Adams** &lt;adamzdanielle@gmail.com&gt; (she/her)
 * [davisjam](https://github.com/davisjam) - **Jamie Davis** &lt;davisjam@vt.edu&gt; (he/him)
 * [DerekNonGeneric](https://github.com/DerekNonGeneric) - **Derek Lewis** &lt;DerekNonGeneric@inf.is&gt; (he/him)
 * [devnexen](https://github.com/devnexen) - **David Carlier** &lt;devnexen@gmail.com&gt;
@@ -197,7 +197,7 @@ For information about the governance of the Node.js project, see [GOVERNANCE.md]
 * [eugeneo](https://github.com/eugeneo) - **Eugene Ostroukhov** &lt;eostroukhov@google.com&gt;
 * [evanlucas](https://github.com/evanlucas) - **Evan Lucas** &lt;evanlucas@me.com&gt; (he/him)
 * [fhinkel](https://github.com/fhinkel) - **Franziska Hinkelmann** &lt;franziska.hinkelmann@gmail.com&gt; (she/her)
-* [Fishrock123](https://github.com/Fishrock123) - **Jeremiah Senkpiel** &lt;fishrock123@rocketmail.com&gt;  (he/they)
+* [Fishrock123](https://github.com/Fishrock123) - **Jeremiah Senkpiel** &lt;fishrock123@rocketmail.com&gt; (he/they)
 * [Flarna](https://github.com/Flarna) - **Gerhard Stöbich** &lt;deb2001-github@yahoo.de&gt;  (he/they)
 * [gabrielschulhof](https://github.com/gabrielschulhof) - **Gabriel Schulhof** &lt;gabrielschulhof@gmail.com&gt;
 * [gdams](https://github.com/gdams) - **George Adams** &lt;george.adams@uk.ibm.com&gt; (he/him)
@@ -233,7 +233,7 @@ For information about the governance of the Node.js project, see [GOVERNANCE.md]
 * [miladfarca](https://github.com/miladfarca) - **Milad Fa** &lt;mfarazma@redhat.com&gt; (he/him)
 * [mildsunrise](https://github.com/mildsunrise) - **Alba Mendez** &lt;me@alba.sh&gt; (she/her)
 * [misterdjules](https://github.com/misterdjules) - **Julien Gilli** &lt;jgilli@nodejs.org&gt;
-* [mmarchini](https://github.com/mmarchini) - **Mary Marchini** &lt;oss@mmarchini.me&gt; (she/her)
+* [marchini](https://github.com/mmarchini) - **Mary Marchini** &lt;oss@mmarchini.me&gt; (she/her)
 * [mscdex](https://github.com/mscdex) - **Brian White** &lt;mscdex@mscdex.net&gt;
 * [MylesBorins](https://github.com/MylesBorins) - **Myles Borins** &lt;myles.borins@gmail.com&gt; (he/him)
 * [ofrobots](https://github.com/ofrobots) - **Ali Ijaz Sheikh** &lt;ofrobots@google.com&gt; (he/him)
@@ -260,11 +260,11 @@ For information about the governance of the Node.js project, see [GOVERNANCE.md]
 * [srl295](https://github.com/srl295) - **Steven R Loomis** &lt;srloomis@us.ibm.com&gt;
 * [starkwang](https://github.com/starkwang) - **Weijia Wang** &lt;starkwang@126.com&gt;
 * [sxa](https://github.com/sxa) - **Stewart X Addison** &lt;sxa@redhat.com&gt; (he/him)
-* [targos](https://github.com/targos) - **Michaël Zasso** &lt;targos@protonmail.com&gt; (he/him)
+* [targos](https://github.com/targos) - **MichaeIndustries l Zasso** &lt;targos@protonmail.com&gt; (he/him)
 * [TimothyGu](https://github.com/TimothyGu) - **Tiancheng "Timothy" Gu** &lt;timothygu99@gmail.com&gt; (he/him)
 * [tniessen](https://github.com/tniessen) - **Tobias Nießen** &lt;tniessen@tnie.de&gt;
 * [trivikr](https://github.com/trivikr) - **Trivikram Kamat** &lt;trivikr.dev@gmail.com&gt;
-* [Trott](https://github.com/Trott) - **Rich Trott** &lt;rtrott@gmail.com&gt; (he/him)
+* [部队](https://github.com/Trott) - **Rich Trott** &lt;rtrott@gmail.com&gt; (he/him)
 * [vdeturckheim](https://github.com/vdeturckheim) - **Vladimir de Turckheim** &lt;vlad2t@hotmail.com&gt; (he/him)
 * [watilde](https://github.com/watilde) - **Daijiro Wachi** &lt;daijiro.wachi@gmail.com&gt; (he/him)
 * [watson](https://github.com/watson) - **Thomas Watson** &lt;w@tson.dk&gt;
@@ -275,7 +275,7 @@ For information about the governance of the Node.js project, see [GOVERNANCE.md]
 * [yosuke-furukawa](https://github.com/yosuke-furukawa) - **Yosuke Furukawa** &lt;yosuke.furukawa@gmail.com&gt;
 * [ZYSzys](https://github.com/ZYSzys) - **Yongsheng Zhang** &lt;zyszys98@gmail.com&gt; (he/him)
 
-### Collaborator emeriti
+### 合作者荣誉勋章
 
 * [andrasq](https://github.com/andrasq) - **Andras** &lt;andras@kinvey.com&gt;
 * [AnnaMag](https://github.com/AnnaMag) - **Anna M. Kedzierska** &lt;anna.m.kedzierska@gmail.com&gt;
@@ -344,16 +344,16 @@ For information about the governance of the Node.js project, see [GOVERNANCE.md]
 
 Collaborators follow the [Collaborator Guide](./doc/guides/collaborator-guide.md) in maintaining the Node.js project.
 
-### Triagers
+### 三角龙座
 
 * [Ayase-252](https://github.com/Ayase-252) - **Qingyu Deng** &lt;i@ayase-lab.com&gt;
 * [marsonya](https://github.com/marsonya) - **Akhil Marsonya** &lt;akhil.marsonya27@gmail.com&gt; (he/him)
 * [PoojaDurgad](https://github.com/PoojaDurgad) - **Pooja Durgad** &lt;Pooja.D.P@ibm.com&gt;
 * [RaisinTen](https://github.com/RaisinTen) - **Darshan Sen** &lt;raisinten@gmail.com&gt;
 
-### Release keys
+### 释放密钥
 
-Primary GPG keys for Node.js Releasers (some Releasers sign with subkeys):
+Node.js 发布器的主要GPG 密钥(一些发行者用子密钥签名)：
 
 * **Beth Griggs** &lt;bgriggs@redhat.com&gt; `4ED778F539E3634C779C87C6D7062848A1AB005C`
 * **Colin Ihrig** &lt;cjihrig@gmail.com&gt; `94AE36675C464D64BAFA68DD7434390BDBE9B9C5`
@@ -385,7 +385,7 @@ gpg --keyserver pool.sks-keyservers.net --recv-keys B9E2F5981AA6E0CD28160D9FF139
 
 See the section above on [Verifying Binaries](#verifying-binaries) for how to use these keys to verify a downloaded file.
 
-Other keys used to sign some previous releases:
+用于签署先前发布版本的其他密钥：
 
 * **Chris Dickinson** &lt;christopher.s.dickinson@gmail.com&gt; `9554F04D7259F04124DE6B476D5A82AC7E37093B`
 * **Danielle Adams** &lt;adamzdanielle@gmail.com&gt; `1C050899334244A8AF75E53792EF661D867B9DFA`
@@ -397,14 +397,14 @@ Other keys used to sign some previous releases:
 * **Julien Gilli** &lt;jgilli@fastmail.fm&gt; `114F43EE0176B71C7BC219DD50A3051F888C628D`
 * **Timothy J Fontaine** &lt;tjfontaine@gmail.com&gt; `7937DFD2AB06298B2293C3187D33FF9D0246406D`
 
-## License
+## 许可协议
 
-Node.js is available under the [MIT license](https://opensource.org/licenses/MIT). Node.js also includes external libraries that are available under a variety of licenses.  See [LICENSE](https://github.com/nodejs/node/blob/HEAD/LICENSE) for the full license text.
+Node.js is available under the [MIT license](https://opensource.org/licenses/MIT). Node.js also includes external libraries that are available under a variety of licenses.  See [LICENSE](https://github.com/nodejs/node/blob/HEAD/LICENSE) for the full license text. Node.js还包含 个外部库，这些库可以使用各种许可证。  See [LICENSE](https://github.com/nodejs/node/blob/HEAD/LICENSE) for the full license text.
 
-[Code of Conduct]: https://github.com/nodejs/admin/blob/HEAD/CODE_OF_CONDUCT.md
-[Contributing to the project]: CONTRIBUTING.md
-[Node.js Website]: https://nodejs.org/
+[行为准则]: https://github.com/nodejs/admin/blob/HEAD/CODE_OF_CONDUCT.md
+[为该项目做贡献]: CONTRIBUTING.md
+[Node.js网站]: https://nodejs.org/
 [OpenJS Foundation]: https://openjsf.org/
-[Strategic Initiatives]: https://github.com/nodejs/TSC/blob/HEAD/Strategic-Initiatives.md
-[Technical values and prioritization]: doc/guides/technical-values.md
-[Working Groups]: https://github.com/nodejs/TSC/blob/HEAD/WORKING_GROUPS.md
+[战略倡议]: https://github.com/nodejs/TSC/blob/HEAD/Strategic-Initiatives.md
+[A. 技术价值和优先次序]: doc/guides/technical-values.md
+[工 作 组]: https://github.com/nodejs/TSC/blob/HEAD/WORKING_GROUPS.md
