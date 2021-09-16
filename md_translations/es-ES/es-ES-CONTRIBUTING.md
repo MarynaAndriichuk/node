@@ -1,36 +1,36 @@
-# Contributing to Node.js
+# Contribuir a Node.js
 
-* [Code of Conduct](#code-of-conduct)
-* [Issues](#issues)
+* [Código de conducta](#code-of-conduct)
+* [Problemas](#issues)
 * [Pull Requests](#pull-requests)
-* [Developer's Certificate of Origin 1.1](#developers-certificate-of-origin)
+* [Certificado del desarrollador de origen 1.1](#developers-certificate-of-origin)
 
-## [Code of Conduct](./doc/guides/contributing/code-of-conduct.md)
+## [Código de conducta](./doc/guides/contributing/code-of-conduct.md)
 
 The Node.js project has a [Code of Conduct](https://github.com/nodejs/admin/blob/HEAD/CODE_OF_CONDUCT.md) to which all contributors must adhere.
 
-See [details on our policy on Code of Conduct](./doc/guides/contributing/code-of-conduct.md).
+Vea [detalles sobre nuestra política de código de conducta](./doc/guides/contributing/code-of-conduct.md).
 
-## [Issues](./doc/guides/contributing/issues.md)
+## [Problemas](./doc/guides/contributing/issues.md)
 
-* [Asking for General Help](./doc/guides/contributing/issues.md#asking-for-general-help)
-* [Discussing non-technical topics](./doc/guides/contributing/issues.md#discussing-non-technical-topics)
-* [Submitting a Bug Report](./doc/guides/contributing/issues.md#submitting-a-bug-report)
-* [Triaging a Bug Report](./doc/guides/contributing/issues.md#triaging-a-bug-report)
+* [Solicitando ayuda general](./doc/guides/contributing/issues.md#asking-for-general-help)
+* [Discutir temas no técnicos](./doc/guides/contributing/issues.md#discussing-non-technical-topics)
+* [Enviar un informe de error](./doc/guides/contributing/issues.md#submitting-a-bug-report)
+* [Prueba de un reporte de error](./doc/guides/contributing/issues.md#triaging-a-bug-report)
 
 ## [Pull Requests](./doc/guides/contributing/pull-requests.md)
 
-* [Dependencies](./doc/guides/contributing/pull-requests.md#dependencies)
-* [Setting up your local environment](./doc/guides/contributing/pull-requests.md#setting-up-your-local-environment)
-* [The Process of Making Changes](./doc/guides/contributing/pull-requests.md#the-process-of-making-changes)
-* [Reviewing Pull Requests](./doc/guides/contributing/pull-requests.md#reviewing-pull-requests)
-* [Notes](./doc/guides/contributing/pull-requests.md#notes)
+* [Dependencias](./doc/guides/contributing/pull-requests.md#dependencies)
+* [Configurando su entorno local](./doc/guides/contributing/pull-requests.md#setting-up-your-local-environment)
+* [El proceso de hacer cambios](./doc/guides/contributing/pull-requests.md#the-process-of-making-changes)
+* [Revisando Pull Requests](./doc/guides/contributing/pull-requests.md#reviewing-pull-requests)
+* [Notas](./doc/guides/contributing/pull-requests.md#notes)
 
 <a id="developers-certificate-of-origin"></a>
 
-## Developer's Certificate of Origin 1.1
+## Certificado del desarrollador de origen 1.1
 
-By making a contribution to this project, I certify that:
+Al contribuir a este proyecto, certifico que:
 
  (a) The contribution was created in whole or in part by me and I have the right to submit it under the open source license indicated in the file; or
 
