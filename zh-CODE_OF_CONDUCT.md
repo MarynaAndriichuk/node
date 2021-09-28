@@ -1,4 +1,4 @@
-# 行为守则
+# Code of Conduct
 
-* [Node.js 行为守则](https://github.com/nodejs/admin/blob/HEAD/CODE_OF_CONDUCT.md)
-* [Node.js 管理策略](https://github.com/nodejs/admin/blob/HEAD/Moderation-Policy.md)
+* [Node.js Code of Conduct](https://github.com/nodejs/admin/blob/HEAD/CODE_OF_CONDUCT.md)
+* [Node.js Moderation Policy](https://github.com/nodejs/admin/blob/HEAD/Moderation-Policy.md)
