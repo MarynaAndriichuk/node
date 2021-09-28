@@ -6,8 +6,8 @@ Wenn Sie einen Testfehler reproduzieren können, suchen Sie ihn im [Node.js Issu
 
 ## Inhaltsverzeichnis!
 
-* [Unterstützte Plattformen](#supported-platforms)
-  * [Input](#input)
+* [Unterstützte Platformen](#supported-platforms)
+  * [Eingabe](#input)
   * [Strategie](#strategy)
   * [Plattformliste](#platform-list)
   * [Unterstützte Toolchains](#supported-toolchains)
@@ -54,7 +54,7 @@ Wenn Sie einen Testfehler reproduzieren können, suchen Sie ihn im [Node.js Issu
   * [Fenster](#windows-5)
 * [Hinweis für nachgelagerte Distributoren von Node.js](#note-for-downstream-distributors-of-nodejs)
 
-## Unterstützte Plattformen
+## Unterstützte Platformen
 
 Diese Liste der unterstützten Plattformen ist aktuell ab dem Branch/Release, zu dem sie gehört.
 
