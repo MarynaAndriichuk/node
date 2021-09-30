@@ -60,7 +60,7 @@
 
 ### Input
 
-Node.js依赖于V8和libuv。 我们采纳了他们支持的平台的子集。
+Node.js relies on V8 and libuv. We adopt a subset of their supported platforms. 我们采纳了他们支持的平台的子集。
 
 ### 战略
 
@@ -70,7 +70,7 @@ Node.js依赖于V8和libuv。 我们采纳了他们支持的平台的子集。
 * **级别2**: 这些平台代表了Node.js用户基础中的较小的部分。 Node.js 建筑工作组维持全面测试覆盖的基础设施。 第二级平台上的测试失败将阻止发布。 基础设施问题可能会推迟为这些平台释放二维码。
 * **实验**: 可能不编译或测试套件可能无法通过。 核心小组没有为这些平台创建释放。 实验平台上的测试失败不会阻止释放。 欢迎为改善对这些平台的支持作出贡献。
 
-平台可能会在主要发布线之间的层级间移动。 下表将反映这些变化。
+Platforms may move between tiers between major release lines. The table below will reflect those changes. 下表将反映这些变化。
 
 ### 平台列表
 
@@ -102,9 +102,9 @@ Node.js不支持平台版本，如果供应商已过期支持的话。 换言之
 
 <em id="fn1">1</em>: 海合会8 未在基础平台上提供。 用户将需要 [工具链测试版本 PPA](https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/test?field.series_filter=xenial) 或类似于源代码更新的编译器。
 
-<em id="fn2">2</em>: 海合会8 未在基础平台上提供。 用户将需要 [devtoolset-8](https://www.softwarecollections.org/en/scls/rhscl/devtoolset-8/) 或稍后才能提供一个更新的编译器。
+<em id="fn2">2</em>: GCC 8 is not provided on the base platform. Users will need the [devtoolset-8](https://www.softwarecollections.org/en/scls/rhscl/devtoolset-8/) or later to source a newer compiler. 用户将需要 [devtoolset-8](https://www.softwarecollections.org/en/scls/rhscl/devtoolset-8/) 或稍后才能提供一个更新的编译器。
 
-<em id="fn3">3</em>: 更早的内核版本可能适用于 ARM64 。 然而，Node.js只测试基础结构测试 >= 4.5。
+<em id="fn3">3</em>: Older kernel versions may work for ARM64. However the Node.js test infrastructure only tests >= 4.5. 然而，Node.js只测试基础结构测试 >= 4.5。
 
 <em id="fn4">4</em>: 在 Windows 上，运行节点。 s 在 Windows 终端模拟器中，例如 `迷你` 需要使用 [winpty](https://github.com/rprichard/winpty) 才能正常工作 (e). 。 `winpty node.exe script.js`)。 在“Git bash”中，如果您调用节点外壳别名(`节点` 没有 `xe` 扩展), `winpty` 被自动使用
 
@@ -166,7 +166,7 @@ Please refer to <https://www.openssl.org/docs/man1.1.1/man3/OPENSSL_ia32cap.html
 
 ### 此文档的先前版本
 
-支持的平台和工具链随着每个主要版本Node.js而变化。 此文档仅适用于当前主要版本的 Node.js。 查阅旧版本Node.js的此文档：
+Supported platforms and toolchains change with each major version of Node.js. This document is only valid for the current major version of Node.js. Consult previous versions of this document for older versions of Node.js: 此文档仅适用于当前主要版本的 Node.js。 查阅旧版本Node.js的此文档：
 
 * [Node.js 14](https://github.com/nodejs/node/blob/v14.x/BUILDING.md)
 * [Node.js 12](https://github.com/nodejs/node/blob/v12.x/BUILDING.md)
@@ -252,7 +252,7 @@ $ make -j4 测试
 
 `让-j4测试` 对代码片段进行全面检查，包括运行linters和文档测试。
 
-请确保班轮没有报告任何问题，并确保所有测试通过。 请不要提交检查失败的补丁。
+Make sure the linter does not report any issues and that all tests pass. Please do not submit patches that fail either check. 请不要提交检查失败的补丁。
 
 如果你想要运行直线器而不运行测试，请使用 `制作直线`/`vcbuild直线`。 它会lint JavaScript, C++, and Markdown文件。
 
@@ -292,7 +292,7 @@ sudo sysctl -w net.ipv6.conf.lo.disable_ipv6=0
 
 #### 正在运行的范围
 
-确保您添加或更改的任何代码都包含在测试范围内是好的做法。 您可以通过运行带有覆盖面的测试套件来这样做：
+It's good practice to ensure any code you add or change is covered by tests. You can do so by running the test suite with coverage enabled: 您可以通过运行带有覆盖面的测试套件来这样做：
 
 ```console
 $ ./configure --coverage
@@ -323,7 +323,7 @@ $ NODE_V8_COVERAGE=coverage/tmp python tools/test.py -J --mode=release child-pro
 $ make coverage-report-js
 ```
 
-`覆盖` 命令下载一些工具到项目根目录。 在生成覆盖报告后进行清理：
+The `make coverage` command downloads some tools to the project root directory. To clean up after generating the coverage reports: 在生成覆盖报告后进行清理：
 
 ```console
 美元进行覆盖清理
@@ -433,7 +433,7 @@ $ ./configure --node-build-modules-path $(pwd)
 
 #### 疑难解答Unix 和 macOS 版本
 
-旧版本的构建有时会导致 `文件在构建时找不到` 个错误。 这个问题和其他一些问题可以通过 `进行远程` 解决。 `远程` 配方主动移除构造工艺品。 您将需要重新构建(`make -j4`)。 由于所有建筑物已被拆除，这次重建可能需要比以前的建筑更多的时间。 此外， `远程` 移除储存 `结果的文件。/configure`。 如果您运行了 `。 使用非默认选项配置` (例如 `--debug`), 您需要重新运行它才能使用 `make -j4`。
+Stale builds can sometimes result in `file not found` errors while building. This and some other problems can be resolved with `make distclean`. The `distclean` recipe aggressively removes build artifacts. You will need to build again (`make -j4`). Since all build artifacts have been removed, this rebuild may take a lot more time than previous builds. Additionally, `distclean` removes the file that stores the results of `./configure`. If you ran `./configure` with non-default options (such as `--debug`), you will need to run it again before invoking `make -j4`. 这个问题和其他一些问题可以通过 `进行远程` 解决。 `远程` 配方主动移除构造工艺品。 您将需要重新构建(`make -j4`)。 由于所有建筑物已被拆除，这次重建可能需要比以前的建筑更多的时间。 此外， `远程` 移除储存 `结果的文件。/configure`。 如果您运行了 `。 使用非默认选项配置` (例如 `--debug`), 您需要重新运行它才能使用 `make -j4`。
 
 ### 窗口
 
@@ -627,13 +627,17 @@ $make install_fips
 
 在上述说明安装了FIPS模块和配置文件后，我们也需要更新 `/path/to/install/dir/sl/openssl。 nf` 可使用生成的 FIPS 配置文件(`fipsomudule.cnf`):
 ```text
-.include fipsmobule。 nf
+.include fipsmodule.cnf
 
-# 要加载
+# List of providers to load
 [provider_sect]
-默认 = 默认值
-# fips 部分名称应该匹配在
-# 中包含/path/to/install/dir/sl/fipsmobule。 页：1
+default = default_sect
+# The fips section name should match the section name inside the
+# included /path/to/install/dir/ssl/fipsmodule.cnf.
+fips = fips_sect
+
+[default_sect]
+activate = 1
 fips = fips_sect
 
 [default_sect]
