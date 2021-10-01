@@ -18,7 +18,7 @@ Node.js项目为安全研究人员和负责任的公开披露参与了官方的�
 
 关于此进程的详细信息可以在 [安全工作组仓库](https://github.com/nodejs/security-wg/blob/HEAD/processes/third_party_vuln_process.md) 中找到。
 
-Thank you for improving the security of Node.js and its ecosystem. Your efforts and responsible disclosure are greatly appreciated and will be acknowledged. 你的努力和负责任的披露受到高度赞赏，并将得到肯定。
+感谢你改善Node.js及其生态系统的安全。 你的努力和负责任的披露受到高度赞赏，并将得到肯定。
 
 ## 披露政策
 
