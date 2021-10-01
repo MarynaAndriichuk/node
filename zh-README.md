@@ -9,9 +9,9 @@
   </a>
 </p>
 
-Node.js is an open-source, cross-platform, JavaScript runtime environment. It executes JavaScript code outside of a browser. For more information on using Node.js, see the [Node.js Website][]. 它在浏览器之外执行 JavaScript 代码。 关于使用 Node.js的更多信息，请参阅 [Node.js网站][]。
+Node.js是一个开源、跨平台的 JavaScript 运行环境。 它在浏览器之外执行 JavaScript 代码。 关于使用 Node.js的更多信息，请参阅 [Node.js网站][]。
 
-The Node.js project uses an [open governance model](./GOVERNANCE.md). The [OpenJS Foundation][] provides support for the project. [OpenJS Foundation][] 为项目提供支持。
+Node.js项目使用 [开放治理模式](./GOVERNANCE.md)。 [OpenJS Foundation][] 为项目提供支持。
 
 **此项目受 [行为准则][] 的约束。**
 
@@ -43,7 +43,7 @@ The Node.js project uses an [open governance model](./GOVERNANCE.md). The [OpenJ
 * **LTS**: 获得长期支持的释放，侧重于稳定和安全。 每个偶数的主要版本都将成为LTS版本。 LTS 发布会得到 _活跃的 LTS_ 支持的12个月，以及另外18个月的 _维护_。 LTS 发行行有按字母顺序排序的代码名，从v4 Argon开始。 除某些特殊情况外，没有任何突破性变化或特征增添。
 * **每晚**: 当前分支的代码在发生更改时每隔24小时构建一次。 谨慎使用。
 
-Current and LTS releases follow [Semantic Versioning](https://semver.org). A member of the Release Team [signs](#release-keys) each Current and LTS release. For more information, see the [Release README](https://github.com/nodejs/Release#readme). 发布组成员 [签名](#release-keys) 当前发布和 LTS 发布。 欲了解更多信息，请参阅 [ReleADME](https://github.com/nodejs/Release#readme)。
+当前版本和 LTS 版本遵循 [语义版本](https://semver.org)。 发布组成员 [签名](#release-keys) 当前发布和 LTS 发布。 欲了解更多信息，请参阅 [ReleADME](https://github.com/nodejs/Release#readme)。
 
 ### 下载
 
@@ -61,7 +61,7 @@ Binaries, installers, and source tarballs are available at <https://nodejs.org/e
 
 #### API 文档
 
-Documentation for the latest Current release is at <https://nodejs.org/api/>. Version-specific documentation is available in each release directory in the _docs_ subdirectory. Version-specific documentation is also at <https://nodejs.org/download/docs/>. 版本专用文档可在 _docs_ 子目录中的每个发布目录中查阅。 特定版本的文档也在 <https://nodejs.org/download/docs/>。
+最新版本的文档是 <https://nodejs.org/api/>。 版本专用文档可在 _docs_ 子目录中的每个发布目录中查阅。 特定版本的文档也在 <https://nodejs.org/download/docs/>。
 
 ### 正在验证二进制文件
 
@@ -403,7 +403,6 @@ Node.js是在 [MIT 许可证](https://opensource.org/licenses/MIT) 下可用的�
 
 [行为准则]: https://github.com/nodejs/admin/blob/HEAD/CODE_OF_CONDUCT.md
 [为该项目做贡献]: CONTRIBUTING.md
-[Node.js Website]: https://nodejs.org/
 [Node.js网站]: https://nodejs.org/
 [OpenJS Foundation]: https://openjsf.org/
 [战略倡议]: https://github.com/nodejs/TSC/blob/HEAD/Strategic-Initiatives.md
