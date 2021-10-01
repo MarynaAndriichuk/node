@@ -1,132 +1,132 @@
-# Node.js Project Governance
+# Node.js Projektsteuerung
 
 <!-- TOC -->
 
-* [Triagers](#triagers)
-* [Collaborators](#collaborators)
-  * [Collaborator activities](#collaborator-activities)
-* [Technical steering committee](#technical-steering-committee)
-  * [TSC meetings](#tsc-meetings)
-* [Collaborator nominations](#collaborator-nominations)
-  * [Onboarding](#onboarding)
-* [Consensus seeking process](#consensus-seeking-process)
+* [Tricker](#triagers)
+* [Mitarbeiter](#collaborators)
+  * [Mitarbeiteraktivitäten](#collaborator-activities)
+* [Technischer Lenkungsausschuss](#technical-steering-committee)
+  * [TSC Besprechungen](#tsc-meetings)
+* [Nominierungen für Mitarbeiter](#collaborator-nominations)
+  * [Einbinden](#onboarding)
+* [Konsensus Suchprozess](#consensus-seeking-process)
 
 <!-- /TOC -->
 
-## Triagers
+## Tricker
 
-Triagers assess newly-opened issues in the nodejs/node and nodejs/help repositories. There is no GitHub team for triagers at the moment.
+Triagers bewerten neu geöffnete Probleme in Nodejs/node und nodejs/help Repositories. Derzeit gibt es kein GitHub Team für Triager.
 
-Triagers have:
-* ability to label issues
-* ability to comment, close, and reopen issues
+Triagers haben:
+* die Fähigkeit Probleme zu benennen
+* die Möglichkeit, Themen zu kommentieren, zu schließen und neu zu öffnen
 
-See:
+Sie:
 
-* [A guide for triagers](./doc/guides/contributing/issues.md#triaging-a-bug-report)
+* [Eine Anleitung für Triager](./doc/guides/contributing/issues.md#triaging-a-bug-report)
 
-## Collaborators
+## Mitarbeiter
 
-Node.js Core Collaborators maintain the [nodejs/node][] GitHub repository. The GitHub team for Node.js Core Collaborators is @nodejs/collaborators. Collaborators have:
+Node.js Core Collaborators pflegen das [nodejs/node][] GitHub Repository. Das GitHub Team für Node.js Core Collaborators ist @nodejs/collaborators. Mitarbeiter haben:
 
 * Commit access to the [nodejs/node][] repository
-* Access to the Node.js continuous integration (CI) jobs
+* Zugriff auf die fortlaufende Integration von Node.js (CI)
 
-Both Collaborators and non-Collaborators may propose changes to the Node.js source code. The mechanism to propose such a change is a GitHub pull request. Collaborators review and merge (_land_) pull requests.
+Sowohl Mitarbeiter als auch Nicht-Mitarbeiter können Änderungen am Quellcode von Node.js vorschlagen. Der Mechanismus, um eine solche Änderung vorzuschlagen, ist eine GitHub Pull-Anfrage. Mitarbeiter überprüfen und verschmelzen (_landen_) Pull-Requests.
 
-Two Collaborators must approve a pull request before the pull request can land. (One Collaborator approval is enough if the pull request has been open for more than 7 days.) Approving a pull request indicates that the Collaborator accepts responsibility for the change. Approving a pull request indicates that the Collaborator accepts responsibility for the change. Approval must be from Collaborators who are not authors of the change.
+Zwei Mitarbeiter müssen einen Pull-Request genehmigen, bevor der Pull-Request landen kann. (Eine Mitarbeiterfreigabe reicht aus, wenn der Pull-Request länger als 7 Tage geöffnet ist.) Die Genehmigung eines Pull-Requests bedeutet, dass der Mitarbeiter die Verantwortung für die Änderung übernimmt. Die Zustimmung muss von Mitarbeitern erteilt werden, die keine Autoren der Änderung sind.
 
-If a Collaborator opposes a proposed change, then the change cannot land. The exception is if the TSC votes to approve the change despite the opposition. Usually, involving the TSC is unnecessary. Often, discussions or further changes result in Collaborators removing their opposition.
+Wenn ein Mitarbeiter gegen eine vorgeschlagene Änderung ist, kann die Änderung nicht landen. Die Ausnahme ist, wenn der TSC trotz des Widerstands für die Annahme der Änderung stimmt. In der Regel ist die Einbeziehung des TSC unnötig. Oft führen Diskussionen oder weitere Änderungen dazu, dass Kollaborateure ihre Opposition aufheben.
 
-See:
+Sie:
 
-* [List of Collaborators](./README.md#current-project-team-members)
-* [A guide for Collaborators](./doc/guides/collaborator-guide.md)
+* [Liste der Kollaboratoren](./README.md#current-project-team-members)
+* [Eine Anleitung für Mitarbeiter](./doc/guides/collaborator-guide.md)
 
-### Collaborator activities
+### Mitarbeiteraktivitäten
 
-* Helping users and novice contributors
-* Contributing code and documentation changes that improve the project
-* Reviewing and commenting on issues and pull requests
-* Participation in working groups
-* Merging pull requests
+* Hilfe für Benutzer und Anfänger
+* Code-und Dokumentationsänderungen, die das Projekt verbessern
+* Überprüfen und kommentieren von Tickets und Pull-Requests
+* Teilnahme an Arbeitsgruppen
+* Pull-Requests zusammenführen
 
-The TSC can remove inactive Collaborators or provide them with _Emeritus_ status. Emeriti may request that the TSC restore them to active status.
+Der TSC kann inaktive Mitarbeiter entfernen oder mit dem _Emeritus_ Status versorgen. Emeriti kann beantragen, dass der TSC diese wieder in den aktiven Status zurücksetzt.
 
-## Technical Steering Committee
+## Technischer Lenkungsausschuss
 
-A subset of the Collaborators forms the Technical Steering Committee (TSC). The TSC has final authority over this project, including:
+Eine Teilmenge der Kollaboratoren bildet den Technischen Lenkungsausschuss (TSC). Der TSC hat die endgültige Befugnis für dieses Projekt, einschließlich:
 
-* Technical direction
-* Project governance and process (including this policy)
-* Contribution policy
+* Technische Richtung
+* Projektverwaltung und -prozess (einschließlich dieser Richtlinie)
+* Spendenrichtlinie
 * GitHub repository hosting
-* Conduct guidelines
-* Maintaining the list of Collaborators
+* Verhaltensrichtlinien
+* Pflege der Liste der Kollaboratoren
 
-The current list of TSC members is in [the project README](./README.md#current-project-team-members).
+Die aktuelle Liste der TSC Mitglieder ist in [das Projekt README](./README.md#current-project-team-members).
 
-The [TSC Charter][] governs the operations of the TSC. All changes to the Charter need approval by the OpenJS Foundation Cross-Project Council (CPC).
+Die [TSC Charter][] regelt den Betrieb der TSC. Alle Änderungen an der Charta bedürfen der Zustimmung des OpenJS Foundation Cross-Project Council (CPC).
 
-### TSC meetings
+### TSC Besprechungen
 
-The TSC meets in a voice conference call. Each year, the TSC elects a chair to run the meetings. The TSC streams its meetings for public viewing on YouTube or a similar service.
+Der TSC trifft sich in einem Sprachkonferenzgespräch. Jedes Jahr wählt der TSC einen Vorsitzenden für die Durchführung der Sitzungen. Der TSC streamt seine Sitzungen für die öffentliche Betrachtung auf YouTube oder einem ähnlichen Dienst.
 
-The TSC agenda includes issues that are at an impasse. The intention of the agenda is not to review or approve all patches. Collaborators review and approve patches on GitHub.
+Die TSC-Agenda enthält Themen, die sich in einer Sackgasse befinden. Die Tagesordnung zielt nicht darauf ab, alle Patches zu überprüfen oder zu genehmigen. Mitarbeiter überprüfen und genehmigen Patches auf GitHub.
 
-Any community member can create a GitHub issue asking that the TSC review something. If consensus-seeking fails for an issue, a Collaborator may apply the `tsc-agenda` label. That will add it to the TSC meeting agenda.
+Jedes Mitglied der Community kann ein GitHub Problem erstellen, das eine Überprüfung des TSC verlangt. Wenn die Konsenssuche bei einem Thema scheitert, kann ein Mitarbeiter die Bezeichnung `tsc-agenda` anwenden. Das wird zur Tagesordnung des TSC-Treffens hinzugefügt.
 
-Before each TSC meeting, the meeting chair will share the agenda with members of the TSC. TSC members can also add items to the agenda at the beginning of each meeting. The meeting chair and the TSC cannot veto or remove items.
+Vor jedem TSC-Treffen teilt der Sitzungspräsident die Tagesordnung mit den Mitgliedern der TSC. TSC-Mitglieder können zu Beginn jeder Sitzung auch Punkte auf die Tagesordnung setzen. Der Sitzungsvorsitzende und der TSC können weder ein Veto einlegen noch Artikel entfernen.
 
-The TSC may invite people to take part in a non-voting capacity.
+Der TSC kann Personen zur Teilnahme an einer nicht stimmberechtigten Funktion einladen.
 
-During the meeting, the TSC chair ensures that someone takes minutes. After the meeting, the TSC chair ensures that someone opens a pull request with the minutes.
+Während des Treffens sorgt der TSC-Vorsitz dafür, dass jemand Minuten braucht. Nach der Sitzung stellt der TSC-Vorsitzende sicher, dass jemand einen Pull-Request mit dem Protokoll öffnet.
 
-The TSC seeks to resolve as many issues as possible outside meetings using [the TSC issue tracker](https://github.com/nodejs/TSC/issues). The process in the issue tracker is:
+The TSC seeks to resolve as many issues as possible outside meetings using [the TSC issue tracker](https://github.com/nodejs/TSC/issues). Der Prozess im Issue-Tracker ist:
 
-* A TSC member opens an issue explaining the proposal/issue and @-mentions @nodejs/tsc.
-* The proposal passes if, after 72 hours, there are two or more TSC approvals and no TSC opposition.
-* If there is an extended impasse, a TSC member may make a motion for a vote.
+* Ein TSC-Mitglied öffnet ein Problem, das den Vorschlag/Ausgabe und @-Erwähnungen @nodejs/tsc erklärt.
+* Der Vorschlag wird angenommen, wenn es nach 72 Stunden zwei oder mehr TSC-Zulassungen und keine TSC-Einwände gibt.
+* Wenn es zu einer längeren Sackgasse kommt, kann ein TSC-Mitglied einen Antrag zur Abstimmung stellen.
 
-## Collaborator nominations
+## Nominierungen für Mitarbeiter
 
-Existing Collaborators can nominate someone to become a Collaborator. Nominees should have significant and valuable contributions across the Node.js organization.
+Bestehende Mitarbeiter können jemanden zum Mitarbeiter ernennen. Nominees sollten bedeutende und wertvolle Beiträge in der Organisation Node.js haben.
 
-To nominate a new Collaborator, open an issue in the [nodejs/node][] repository. Provide a summary of the nominee's contributions. For example:
+Um einen neuen Kollaborator zu nominieren, öffnen Sie ein Problem im [nodejs/node][] Repository. Geben Sie eine Zusammenfassung der Beiträge des Kandidaten an. Zum Beispiel:
 
-* Commits in the [nodejs/node][] repository.
-  * Use the link `https://github.com/nodejs/node/commits?author=GITHUB_ID`
-* Pull requests and issues opened in the [nodejs/node][] repository.
-  * Use the link `https://github.com/nodejs/node/issues?q=author:GITHUB_ID`
-* Comments on pull requests and issues in the [nodejs/node][] repository
-  * Use the link `https://github.com/nodejs/node/issues?q=commenter:GITHUB_ID`
-* Reviews on pull requests in the [nodejs/node][] repository
-  * Use the link `https://github.com/nodejs/node/pulls?q=reviewed-by:GITHUB_ID`
-* Help provided to end-users and novice contributors
-* Pull requests and issues opened throughout the Node.js organization
-  * Use the link  `https://github.com/search?q=author:GITHUB_ID+org:nodejs`
-* Comments on pull requests and issues throughout the Node.js organization
-  * Use the link `https://github.com/search?q=commenter:GITHUB_ID+org:nodejs`
-* Participation in other projects, teams, and working groups of the Node.js organization
-* Other participation in the wider Node.js community
+* Commits im [nodejs/node][] repository.
+  * Benutze den Link `https://github.com/nodejs/node/commits?author=GITHUB_ID`
+* Pull-Requests und Issues, die im [nodejs/node][] Repository geöffnet wurden.
+  * Benutze den Link `https://github.com/nodejs/node/issues?q=author:GITHUB_ID`
+* Kommentare zu Pull-Requests und Problemen im [nodejs/node][] Repository
+  * Benutze den Link `https://github.com/nodejs/node/issues?q=commenter:GITHUB_ID`
+* Bewertungen bei Pull-Requests im [nodejs/node][] Repository
+  * Benutze den Link `https://github.com/nodejs/node/pulls?q=reviewed-by:GITHUB_ID`
+* Hilfe für Endbenutzer und Anfänger zur Verfügung gestellt
+* Pull-Anfragen und Probleme, die während der Organisation Node.js geöffnet wurden
+  * Benutze den Link  `https://github.com/search?q=author:GITHUB_ID+org:nodejs`
+* Kommentare zu Pull-Requests und Problemen in der gesamten Node.js-Organisation
+  * Benutze den Link `https://github.com/search?q=commenter:GITHUB_ID+org:nodejs`
+* Teilnahme an anderen Projekten, Teams und Arbeitsgruppen der Node.js Organisation
+* Andere Teilnahme an der breiteren Node.js Community
 
-Mention @nodejs/collaborators in the issue to notify other Collaborators about the nomination.
+Erwähnen Sie @nodejs/collaborators in der Ausgabe um andere Mitarbeiter über die Nominierung zu informieren.
 
-The nomination passes if no Collaborators oppose it after one week. Otherwise, the nomination fails.
+Die Nominierung geht voraus, wenn keine Mitarbeiter nach einer Woche dagegen sind. Andernfalls scheitert die Nominierung.
 
-There are steps a nominator can take in advance to make a nomination as frictionless as possible. To request feedback from other Collaborators in private, use the [Collaborators discussion page][] (which only Collaborators may view). A nominator may also work with the nominee to improve their contribution profile.
+Es gibt Schritte, die ein Nominator im Voraus ergreifen kann, um eine Nominierung so reibungslos wie möglich zu gestalten. Um Rückmeldungen von anderen Mitarbeitern privat anzufordern, verwenden Sie die [Kollaboratoren-Diskussionsseite][] (nur Kollaboratoren können sie ansehen). Ein Nominator kann auch mit dem Nominierten zusammenarbeiten, um ihr Beitragsprofil zu verbessern.
 
-Collaborators might overlook someone with valuable contributions. In that case, the contributor may open an issue or contact a Collaborator to request a nomination.
+Mitarbeiter könnten jemanden mit wertvollen Beiträgen übersehen. In diesem Fall kann der Mitwirkende ein Problem aufwerfen oder einen Mitarbeiter kontaktieren, um eine Nominierung zu beantragen.
 
-### Onboarding
+### Einbinden
 
-After the nomination passes, a TSC member onboards the new Collaborator. See [the onboarding guide](./onboarding.md) for details of the onboarding process.
+Nach der Nominierung ist ein TSC Mitglied an Bord des neuen Mitarbeiters. Siehe [den Onboarding-Leitfaden](./onboarding.md) für Details zum Onboarding-Prozess.
 
-## Consensus seeking process
+## Konsensus Suchprozess
 
-The TSC follows a [Consensus Seeking][] decision-making model per the [TSC Charter][].
+Der TSC folgt einem [Konsensus Sucht][] Entscheidungsmodell nach [TSC Charter][].
 
-[Collaborators discussion page]: https://github.com/orgs/nodejs/teams/collaborators/discussions
-[Consensus Seeking]: https://en.wikipedia.org/wiki/Consensus-seeking_decision-making
+[Kollaboratoren-Diskussionsseite]: https://github.com/orgs/nodejs/teams/collaborators/discussions
+[Konsensus Sucht]: https://en.wikipedia.org/wiki/Consensus-seeking_decision-making
 [TSC Charter]: https://github.com/nodejs/TSC/blob/HEAD/TSC-Charter.md
 [nodejs/node]: https://github.com/nodejs/node
