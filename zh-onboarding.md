@@ -114,11 +114,11 @@ apply.whitspace fix`
 
 * 连续集成测试：
   * [https://ci.nodejs.org/](https://ci.nodejs.org/)
-    * It is not automatically run. You need to start it manually. 您需要手动启动它。
-  * Log in on CI is integrated with GitHub. Try to log in now! 现在尝试登录！
-  * You will be using `node-test-pull-request` most of the time. Go there now! 马上去！
+    * 它不是自动运行。 您需要手动启动它。
+  * 登录CI 与 GitHub 集成。 现在尝试登录！
+  * 您将大部分时间使用 `节点测试-拉取请求`。 马上去！
     * 考虑书签： <https://ci.nodejs.org/job/node-test-pull-request/>
-  * To get to the form to start a job, click on `Build with Parameters`. (If you don't see it, that probably means you are not logged in!) Click it now! (如果你看不到，这可能意味着你没有登录！) 现在点击！
+  * 若要进入表单来开始工作，请点击 `用参数` 构建。 (如果你看不到，这可能意味着你没有登录！) 现在点击！
   * 要在此屏幕上开始CI 测试，您需要填写表格上的两个元素：
     * `CERTIFY_SAFE` 框应被选中。 检查它， 你表示你已经审阅了你将要测试的代码，你相信它不包含任何恶意代码。 (我们不想让人劫持我们的 CI 主机来攻击互联网上的其他主机，例如！)
     * `PR_ID` 框应该填写用于识别包含您想要测试的代码的拉取请求的数字。 例如，如果拉取请求的 URL 是 `https://github.com/nodejs/node/issues/7006`, 然后将 `7006` 放入 `PR_ID` 中。
@@ -150,7 +150,7 @@ apply.whitspace fix`
 * 如果在合理的时间内没有足够的批准，考虑船上船上船的海安会成员的单一批准就足够了，然后让船上船的船上船的船上船上船的船上船上船上船的船上船上船的船上船上船上船的船上船上船上船的船上船上船上船的船上船上船的船上船上船上船上船上船的船上船上船上船的船上船上船上船的船上船上船上船的船上船上船的船上船上船上船的船上船上船上船上船上船的船上船上船上船的船上船上船上船上船的船上船上船上船上船上船上船上船上船上船的船上船上船上船上船上船
   * 请务必添加 `PR-URL： <full-pr-url>` 和适当的 `评论者：` 元数据。
   * [`节点代码utils`][] 自动生成元数据和着陆过程。 查看 [`git-node`][] 的文档。
-  * [`core-validate-commit`][] automates the validation of commit messages. This will be run during `git node land --final` of the [`git-node`][] command. 这将在 `git 节点土地-- <a href="https://github.com/nodejs/node-core-utils/blob/HEAD/docs/git-node.md" fo="6">的最终``git-node`</a> 命令期间运行。
+  * [`核心验证提交`][] 自动验证提交信息。 这将在 `git 节点土地-- <a href="https://github.com/nodejs/node-core-utils/blob/HEAD/docs/git-node.md" fo="6">的最终``git-node`</a> 命令期间运行。
 
 ## 最后说明
 
@@ -170,7 +170,7 @@ apply.whitspace fix`
 [登陆拉请求]: doc/guides/collaborator-guide.md#landing-pull-requests
 [公开或隐藏组织成员]: https://help.github.com/articles/publicizing-or-hiding-organization-membership/
 [`作者准备`]: doc/guides/collaborator-guide.md#author-ready-pull-requests
-[`core-validate-commit`]: https://github.com/nodejs/core-validate-commit
+[`核心验证提交`]: https://github.com/nodejs/core-validate-commit
 [`git-node`]: https://github.com/nodejs/node-core-utils/blob/HEAD/docs/git-node.md
 [`node-coere-utils`]: https://github.com/nodejs/node-core-utils
 [`节点代码utils`]: https://github.com/nodejs/node-core-utils
