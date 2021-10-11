@@ -1,179 +1,179 @@
-# Onboarding
+# Embarquement
 
-This document is an outline of the things we tell new Collaborators at their onboarding session.
+Ce document est un aperçu des choses que nous disons aux nouveaux Collaborateurs lors de leur session d'intégration.
 
-## One week before the onboarding session
+## Une semaine avant la session d'intégration
 
-* If the new Collaborator is not yet a member of the nodejs GitHub organization, confirm that they are using [two-factor authentication][]. It will not be possible to add them to the organization if they are not using two-factor authentication. If they cannot receive SMS messages from GitHub, try [using a TOTP mobile app][].
-* Announce the accepted nomination in a TSC meeting and in the TSC mailing list.
-* Suggest the new Collaborator install [`node-core-utils`][] and [set up the credentials][] for it.
+* Si le nouveau Collaborator n'est pas encore membre de l'organisation GitHub de nodejs, confirmez qu'ils utilisent [l'authentification à deux facteurs][]. Il ne sera pas possible de les ajouter à l'organisation si elle n'utilise pas l'authentification à deux facteurs. S'ils ne peuvent pas recevoir de SMS de GitHub, essayez [en utilisant une application mobile TOTP][].
+* Annoncez la nomination acceptée lors d'une réunion de la TSC et dans la liste de diffusion de la TSC.
+* Suggérez le nouveau Collaborator installer [`node-core-utils`][] et [configurer les identifiants][] pour lui.
 
-## Fifteen minutes before the onboarding session
+## Quinze minutes avant la session d'intégration
 
-* Prior to the onboarding session, add the new Collaborator to [the Collaborators team](https://github.com/orgs/nodejs/teams/collaborators).
-* Ask them if they want to join any subsystem teams. See [Who to CC in the issue tracker][who-to-cc].
+* Avant la session d'intégration, ajoutez le nouveau Collaborateur à [l'équipe Collaborators](https://github.com/orgs/nodejs/teams/collaborators).
+* Demandez-leur s'ils veulent rejoindre des équipes de sous-système. Voir [Qui CC dans le gestionnaire de tickets][who-to-cc].
 
-## Onboarding session
+## Session d'intégration
 
-* This session will cover:
-  * [local setup](#local-setup)
-  * [project goals & values](#project-goals--values)
-  * [managing the issue tracker](#managing-the-issue-tracker)
-  * [reviewing PRs](#reviewing-prs)
-  * [landing PRs](#landing-prs)
+* Cette session couvrira:
+  * [configuration locale](#local-setup)
+  * [objectifs & valeurs du projet](#project-goals--values)
+  * [gestion du traqueur de tickets](#managing-the-issue-tracker)
+  * [examen des PRs](#reviewing-prs)
+  * [PRs d'atterrissage](#landing-prs)
 
-## Local setup
+## Configuration locale
 
 * git:
-  * Make sure you have whitespace=fix: `git config --global --add
+  * Assurez-vous que vous avez whitespace=fix : `git config --global --add
 apply.whitespace fix`
-  * Always continue to PR from your own GitHub fork
-    * Branches in the `nodejs/node` repository are only for release lines
-  * Add the canonical nodejs repository as `upstream` remote:
-    * `git remote add upstream git://github.com/nodejs/node.git`
-  * To update from `upstream`:
-    * `git checkout master`
-    * `git remote update -p` OR `git fetch --all`
-    * `git merge --ff-only upstream/master` (or `REMOTENAME/BRANCH`)
-  * Make a new branch for each PR you submit.
-  * Membership: Consider making your membership in the Node.js GitHub organization public. This makes it easier to identify Collaborators. Instructions on how to do that are available at [Publicizing or hiding organization membership][].
+  * Toujours continuer vers la PR depuis votre propre fork GitHub
+    * Les branches dans le dépôt `nodejs/node` ne sont que pour les lignes de publication
+  * Ajouter le dépôt canonical nodejs en tant que `amont` distant :
+    * `git remote add git://github.com/nodejs/node.git`
+  * Pour mettre à jour depuis `amont`:
+    * `Git checkout master`
+    * `git update distante -p` OU `git fetch --all`
+    * `git merge --ff-only upstream/master` (ou `REMOTENAME/BRANCH`)
+  * Créer une nouvelle succursale pour chaque RP que vous soumettez.
+  * Adhésion : Envisagez de rendre votre adhésion à l'organisation GitHub Node.js publique. Cela facilite l'identification des Collaborateurs. Instructions sur la façon de le faire sont disponibles sur [la publication ou la dissimulation de l'adhésion à l'organisation][].
 
 * Notifications:
-  * Use [https://github.com/notifications](https://github.com/notifications) or set up email
-  * Watching the main repo will flood your inbox (several hundred notifications on typical weekdays), so be prepared
+  * Utilisez [https://github.com/notifications](https://github.com/notifications) ou configurez l'e-mail
+  * En regardant le dépôt principal, vous inonderez votre boîte de réception (plusieurs centaines de notifications les jours typiques de la semaine), alors soyez préparé
 
-The project has two venues for real-time discussion:
-* [`#nodejs-dev`](https://openjs-foundation.slack.com/archives/C019Y2T6STH) on the [OpenJS Foundation](https://slack-invite.openjsf.org/)
-* `#node-dev` on [webchat.freenode.net](https://webchat.freenode.net/) is a great place to interact with the TSC and other Collaborators
-  * If there are any questions after the session, a good place to ask is there!
-  * Presence is not mandatory, but please drop a note there if force-pushing to `master`
+Le projet a deux salles de discussion en temps réel :
+* [`#nodejs-dev`](https://openjs-foundation.slack.com/archives/C019Y2T6STH) sur la [Fondation OpenJS](https://slack-invite.openjsf.org/)
+* `#node-dev` sur [webchat.freenode.net](https://webchat.freenode.net/) est un excellent endroit pour interagir avec le TSC et les autres Collaborateurs.
+  * Si vous avez des questions après la séance, un bon endroit est là !
+  * Presence n'est pas obligatoire, mais veuillez y déposer une note si vous forcez la poussée vers `master`
 
-## Project goals & values
+## Objectifs & valeurs du projet
 
-* Collaborators are the collective owners of the project
-  * The project has the goals of its contributors
+* Les collaborateurs sont les propriétaires collectifs du projet
+  * Le projet a les objectifs de ses contributeurs
 
-* There are some higher-level goals and values
-  * Empathy towards users matters (this is in part why we onboard people)
-  * Generally: try to be nice to people!
-  * The best outcome is for people who come to our issue tracker to feel like they can come back again.
+* Il y a des objectifs et des valeurs de plus haut niveau
+  * L'empathie envers les utilisateurs est importante (c'est en partie pourquoi nous embarquons des personnes)
+  * Généralement: essayez d'être gentil avec les gens !
+  * Le meilleur résultat est que les personnes qui viennent sur notre système de suivi de tickets aient l'impression de pouvoir revenir à nouveau.
 
-* You are expected to follow *and* hold others accountable to the [Code of Conduct][].
+* Vous devez suivre *et* tenir les autres responsables devant le [Code de conduite][].
 
-## Managing the issue tracker
+## Gestion du traqueur de tickets
 
-* You have (mostly) free rein; don't hesitate to close an issue if you are confident that it should be closed
-  * Be nice about closing issues! Let people know why, and that issues and PRs can be reopened if necessary
+* Vous avez (principalement) un rein-gratuit ; n'hésitez pas à fermer un ticket si vous êtes sûr qu'il devrait être fermé
+  * Soyez gentil lorsque vous fermez des tickets ! Dites aux gens pourquoi, et que les questions et les relations publiques peuvent être rouvertes si nécessaire
 
-* [**See "Labels"**](./doc/guides/onboarding-extras.md#labels)
-  * There is [a bot](https://github.com/nodejs-github-bot/github-bot) that applies subsystem labels (for example, `doc`, `test`, `assert`, or `buffer`) so that we know what parts of the code base the pull request modifies. It is not perfect, of course. Feel free to apply relevant labels and remove irrelevant labels from pull requests and issues.
+* [**Voir "Étiquettes"**](./doc/guides/onboarding-extras.md#labels)
+  * Il y a [un bot](https://github.com/nodejs-github-bot/github-bot) qui applique les étiquettes du sous-système (par exemple, `doc`, `test`, `affirmer`, ou `tampon`) afin de savoir quelles parties du code de base la demande d'ajout modifie. Ce n'est pas parfait, bien sûr. N’hésitez pas à appliquer des étiquettes pertinentes et à supprimer les étiquettes non pertinentes des demandes de fusion et des problèmes.
   * `semver-{minor,major}`:
-    * If a change has the remote *chance* of breaking something, use the `semver-major` label
-    * When adding a `semver-*` label, add a comment explaining why you're adding it. Do it right away so you don't forget!
-  * Please add the [`author-ready`][] label for PRs, if applicable.
+    * Si un changement a la chance *distante* de casser quelque chose, utilisez l'étiquette `semver-major`
+    * Lors de l'ajout d'une étiquette `semver-*` , ajoutez un commentaire expliquant pourquoi vous l'ajoutez. Faites-le tout de suite pour ne pas oublier !
+  * Veuillez ajouter l'étiquette [`prête à l'auteur`][] pour les PR, le cas échéant.
 
-* See [Who to CC in the issue tracker][who-to-cc].
-  * This will come more naturally over time
-  * For many of the teams listed there, you can ask to be added if you are interested
-    * Some are WGs with some process around adding people, others are only there for notifications
+* Voir [Qui CC dans le gestionnaire de tickets][who-to-cc].
+  * Cela viendra plus naturellement au fil du temps
+  * Pour de nombreuses équipes listées dans la liste, vous pouvez demander à être ajouté si vous êtes intéressé
+    * Certains sont des WGs avec certains processus autour de l'ajout de personnes, d'autres sont seulement là pour les notifications
 
-* When a discussion gets heated, you can request that other Collaborators keep an eye on it by opening an issue at the private [nodejs/moderation](https://github.com/nodejs/moderation) repository.
-  * This is a repository to which all members of the `nodejs` GitHub organization (not just Collaborators on Node.js core) have access. Its contents should not be shared externally.
-  * You can find the full moderation policy [here](https://github.com/nodejs/admin/blob/HEAD/Moderation-Policy.md).
+* Quand une discussion est chauffée, vous pouvez demander à d'autres Collaborators de garder un œil sur cela en ouvrant un problème dans le dépôt privé [nodejs/moderation](https://github.com/nodejs/moderation).
+  * Il s'agit d'un dépôt auquel tous les membres de l'organisation GitHub `nodejs` (pas seulement les Collaborators sur Node.js) ont accès. Son contenu ne doit pas être partagé à l'extérieur.
+  * Vous pouvez trouver la politique de modération complète [ici](https://github.com/nodejs/admin/blob/HEAD/Moderation-Policy.md).
 
-## Reviewing PRs
+## Révision des PRs
 
-* The primary goal is for the codebase to improve.
-* Secondary (but not far off) is for the person submitting code to succeed. A pull request from a new contributor is an opportunity to grow the community.
-* Review a bit at a time. Do not overwhelm new contributors.
-  * It is tempting to micro-optimize. Don't succumb to that temptation. We change V8 often. Techniques that provide improved performance today may be unnecessary in the future.
-* Be aware: Your opinion carries a lot of weight!
-* Nits (requests for small changes that are not essential) are fine, but try to avoid stalling the pull request.
-  * Identify them as nits when you comment: `Nit: change foo() to bar().`
-  * If they are stalling the pull request, fix them yourself on merge.
-* Insofar as possible, issues should be identified by tools rather than human reviewers. If you are leaving comments about issues that could be identified by tools but are not, consider implementing the necessary tooling.
-* Minimum wait for comments time
-  * There is a minimum waiting time which we try to respect for non-trivial changes so that people who may have important input in such a distributed project are able to respond.
-  * For non-trivial changes, leave the pull request open for at least 48 hours.
-  * If a pull request is abandoned, check if they'd mind if you took it over (especially if it just has nits left).
-* Approving a change
-  * Collaborators indicate that they have reviewed and approve of the changes in a pull request using GitHub’s approval interface
-  * Some people like to comment `LGTM` (“Looks Good To Me”)
-  * You have the authority to approve any other collaborator’s work.
-  * You cannot approve your own pull requests.
-  * When explicitly using `Changes requested`, show empathy – comments will usually be addressed even if you don’t use it.
-    * If you do, it is nice if you are available later to check whether your comments have been addressed
-    * If you see that the requested changes have been made, you can clear another collaborator's `Changes requested` review.
-    * Use `Changes requested` to indicate that you are considering some of your comments to block the PR from landing.
+* Le but principal est que la base de code s'améliore.
+* Secondaire (mais pas très loin) est pour la personne qui soumet le code pour réussir. Une demande d'attraction d'un nouveau contributeur est une occasion de faire grandir la communauté.
+* Réviser un peu à la fois. Ne submergez pas de nouveaux contributeurs.
+  * Il est tentant de micro-optimiser. Ne succombez pas à cette tentation. Nous changeons souvent de V8. Les techniques qui améliorent la performance de nos jours peuvent s'avérer inutiles à l'avenir.
+* Soyez attentifs: Votre opinion a beaucoup de poids!
+* Nits (demandes de petits changements qui ne sont pas essentiels) sont corrects, mais essayez d'éviter le blocage de la demande de tirage au sort.
+  * Identifiez-les en tant que nits lorsque vous commentez : `Nit: changer foo() en bar().`
+  * S'ils bloquent la demande de tirage au sort, corrigez-les vous-même lors de la fusion.
+* Dans la mesure du possible, les questions devraient être identifiées par des outils plutôt que par des examinateurs humains. Si vous laissez des commentaires sur des questions qui pourraient être identifiées par des outils mais qui ne le sont pas, envisagez de mettre en œuvre les outils nécessaires.
+* Temps d'attente minimum pour les commentaires
+  * Il y a un minimum de temps d'attente que nous essayons de respecter pour les changements non triviaux afin que les personnes qui peuvent avoir une contribution importante dans un tel projet distribué soient en mesure de répondre.
+  * Pour les changements non triviaux, laissez la pull request ouverte pendant au moins 48 heures.
+  * Si une demande d'ajout est abandonnée, vérifiez si vous l'aurez pris en charge (surtout si elle a juste des nits restants).
+* Approbation d'un changement
+  * Les collaborateurs indiquent qu'ils ont examiné et approuvé les changements dans une pull request en utilisant l'interface d'approbation de GitHub
+  * Certaines personnes aiment commenter `LGTM` (« Ça me semble bien »)
+  * Vous avez l’autorité d’approuver le travail de tout autre collaborateur.
+  * Vous ne pouvez pas approuver vos propres pull requests.
+  * Lorsque vous utilisez explicitement `Modifications demandées`, montrer de l'empathie - les commentaires seront généralement abordés même si vous ne les utilisez pas.
+    * Si vous le faites, c'est bien si vous êtes disponible plus tard pour vérifier si vos commentaires ont été pris en compte
+    * Si vous voyez que les modifications demandées ont été faites, vous pouvez effacer les `Modifications demandées par un autre collaborateur` de la revue.
+    * Utilisez `Modifications demandées` pour indiquer que vous envisagez certains de vos commentaires pour empêcher la PR d'atterrir.
 
-* What belongs in Node.js:
-  * Opinions vary – it’s good to have a broad collaborator base for that reason!
-  * If Node.js itself needs it (due to historical reasons), then it belongs in Node.js.
-    * That is to say, `url` is there because of `http`, `freelist` is there because of `http`, etc.
-  * Things that cannot be done outside of core, or only with significant pain such as `async_hooks`.
+* Qu'est-ce qui appartient à Node.js :
+  * Les opinions varient – il est bon d’avoir une large base de collaborateur pour cette raison !
+  * Si Node.js lui-même en a besoin (pour des raisons historiques), alors il appartient à Node.js.
+    * C'est-à-dire que `url` est là à cause de `http`, `freelist` est là à cause de `http`, etc.
+  * Des choses qui ne peuvent pas être faites en dehors du noyau, ou seulement avec une douleur significative comme `async_hooks`.
 
-* Continuous Integration (CI) Testing:
+* Tests d'intégration continue (CI) :
   * [https://ci.nodejs.org/](https://ci.nodejs.org/)
-    * It is not automatically run. You need to start it manually.
-  * Log in on CI is integrated with GitHub. Try to log in now!
-  * You will be using `node-test-pull-request` most of the time. Go there now!
-    * Consider bookmarking it: <https://ci.nodejs.org/job/node-test-pull-request/>
-  * To get to the form to start a job, click on `Build with Parameters`. (If you don't see it, that probably means you are not logged in!) Click it now!
-  * To start CI testing from this screen, you need to fill in two elements on the form:
-    * The `CERTIFY_SAFE` box should be checked. By checking it, you are indicating that you have reviewed the code you are about to test and you are confident that it does not contain any malicious code. (We don't want people hijacking our CI hosts to attack other hosts on the internet, for example!)
-    * The `PR_ID` box should be filled in with the number identifying the pull request containing the code you wish to test. For example, if the URL for the pull request is `https://github.com/nodejs/node/issues/7006`, then put `7006` in the `PR_ID`.
-    * The remaining elements on the form are typically unchanged.
-  * If you need help with something CI-related:
-    * Use #node-dev (IRC) to talk to other Collaborators.
-    * Use #node-build (IRC) to talk to the Build WG members who maintain the CI infrastructure.
-    * Use the [Build WG repo](https://github.com/nodejs/build) to file issues for the Build WG members who maintain the CI infrastructure.
+    * Il n'est pas exécuté automatiquement. Vous devez le démarrer manuellement.
+  * La connexion sur CI est intégrée à GitHub. Essayez de vous connecter maintenant !
+  * Vous utiliserez `node-test-pull-request` la plupart du temps. Allez là-bas !
+    * Pensez à le mettre en signet : <https://ci.nodejs.org/job/node-test-pull-request/>
+  * Pour accéder au formulaire pour démarrer une tâche, cliquez sur `Build with Parameters`. (Si vous ne le voyez pas, cela signifie probablement que vous n'êtes pas connecté!) Cliquez maintenant !
+  * Pour commencer le test CI à partir de cet écran, vous devez remplir deux éléments sur le formulaire :
+    * La case `CERTIFY_SAFE` doit être vérifiée. En vérifiant, vous indiquez que vous avez vérifié le code que vous êtes sur le point de tester et que vous êtes sûr qu'il ne contient aucun code malveillant. (Nous ne voulons pas que les gens qui détournent nos hôtes CI attaquent d'autres hôtes sur Internet, par exemple !)
+    * La boîte `PR_ID` doit être remplie avec le numéro identifiant la pull request contenant le code que vous souhaitez tester. Par exemple, si l'URL de la pull request est `https://github.com/nodejs/node/issues/7006`, puis mettez `7006` dans le `PR_ID`.
+    * Les éléments restants du formulaire sont généralement inchangés.
+  * Si vous avez besoin d'aide avec quelque chose de lié au CI:
+    * Utilisez #node-dev (IRC) pour parler à d'autres Collaborateurs.
+    * Utilisez #node-build (IRC) pour parler aux membres de Build WG qui maintiennent l'infrastructure CI.
+    * Utilisez le [dépôt WG de Build](https://github.com/nodejs/build) pour archiver les problèmes pour les membres de Build WG qui maintiennent l'infrastructure CI.
 
-## Landing PRs
+## PRs d'atterrissage
 
-See the Collaborator Guide: [Landing Pull Requests][].
+Voir le Guide du collaborateur : [Atterrissage des demandes de tirage][].
 
-Commits in one PR that belong to one logical change should be squashed. It is rarely the case in onboarding exercises, so this needs to be pointed out separately during the onboarding.
+Les commits dans un RP qui appartiennent à un changement logique devraient être écrasés. C'est rarement le cas pour les exercices d'embarquement, et il faut donc le souligner séparément lors de l'embarquement.
 
 <!-- TODO(joyeechueng): provide examples about "one logical change" -->
 
-## Exercise: Make a PR adding yourself to the README
+## Exercice : Faites une PR vous ajoutant au README
 
-* Example: <https://github.com/nodejs/node/commit/b58fe52692659c0bc25ddbe6afa7f4ae2c7f14a8>
-  * For raw commit message: `git show --format=%Bb58fe52692659c0bc25ddbe6afa7f4ae2c7f14a8`
-* Collaborators are in alphabetical order by GitHub username.
-* Optionally, include your personal pronouns.
-* Add the `Fixes: <collaborator-nomination-issue-url>` to the commit message so that when the commit lands, the nomination issue url will be automatically closed.
-* Label your pull request with the `doc`, `notable-change`, and `fast-track` labels.
-* Run CI on the PR. Use the `node-test-pull-request` CI task.
-* After two Collaborator approvals for the change and two Collaborator approvals for fast-tracking, land the PR.
-* Leave a comment in the PR: `Please 👍 this comment to approve fast-tracking`.
-* If there are not enough approvals within a reasonable time, consider the single approval of the onboarding TSC member sufficient, and land the PR.
-  * Be sure to add the `PR-URL: <full-pr-url>` and appropriate `Reviewed-By:` metadata.
-  * [`node-core-utils`][] automates the generation of metadata and the landing process. See the documentation of [`git-node`][].
-  * [`core-validate-commit`][] automates the validation of commit messages. This will be run during `git node land --final` of the [`git-node`][] command.
+* Exemple: <https://github.com/nodejs/node/commit/b58fe52692659c0bc25ddbe6afa7f4ae2c7f14a8>
+  * Pour le message de commit brut : `git show --format=%Bb58fe52692659c0bc25ddbe6afa7f4ae2c7f14a8`
+* Les collaborateurs sont par ordre alphabétique par nom d'utilisateur GitHub.
+* Optionnellement, incluez votre prononciation personnelle.
+* Ajoute les `correctifs : <collaborator-nomination-issue-url>` au message de commit afin que lorsque la livraison se termine, l'url du problème de nomination soit automatiquement fermée.
+* Étiquetez votre pull request avec les étiquettes `doc`, `notable-change`et `fast-track`.
+* Exécutez CI sur le PR. Utilisez la tâche CI `node-test-pull-request`.
+* Après deux approbations de Collaborator pour le changement et deux approbations de Collaborator pour le suivi rapide, atterrir le PR.
+* Laissez un commentaire dans le PR: `Veuillez 👍 ce commentaire pour approuver le suivi rapide`.
+* S'il n'y a pas assez d'autorisations dans un délai raisonnable, considérez que l'approbation unique du membre du TSC à bord suffit et atterrissez la PR.
+  * N'oubliez pas d'ajouter les métadonnées `PR-URL : <full-pr-url>` et la `Revue <code> appropriée -By:` métadonnées.
+  * [`node-core-utils`][] automatise la génération de métadonnées et le processus d'atterrissage. Voir la documentation de [`git-node`][].
+  * [`core-validate-commit`][] automatise la validation des messages de commit. Cela sera exécuté pendant `git node land --final` de la commande [`git-node`][].
 
-## Final notes
+## Notes finales
 
-* Don't worry about making mistakes: everybody makes them, there's a lot to internalize and that takes time (and we recognize that!)
-* Almost any mistake you could make can be fixed or reverted.
-* The existing Collaborators trust you and are grateful for your help!
-* Other repositories:
+* Ne vous inquiétez pas de faire des erreurs : tout le monde les fait, il y a beaucoup à internaliser et cela prend du temps (et nous le reconnaissons !)
+* Presque toute erreur que vous pourriez commettre peut être corrigée ou annulée.
+* Les Collaborators existants vous font confiance et vous sont reconnaissants pour votre aide !
+* Autres dépôts:
   * [https://github.com/nodejs/TSC](https://github.com/nodejs/TSC)
   * [https://github.com/nodejs/build](https://github.com/nodejs/build)
   * [https://github.com/nodejs/nodejs.org](https://github.com/nodejs/nodejs.org)
   * [https://github.com/nodejs/readable-stream](https://github.com/nodejs/readable-stream)
   * [https://github.com/nodejs/LTS](https://github.com/nodejs/LTS)
   * [https://github.com/nodejs/citgm](https://github.com/nodejs/citgm)
-* The OpenJS Foundation hosts regular summits for active contributors to the Node.js project, where we have face-to-face discussions about our work on the project. The Foundation has travel funds to cover participants' expenses including accommodations, transportation, visa fees, etc. if needed. Check out the [summit](https://github.com/nodejs/summit) repository for details.
+* La Fondation OpenJS organise régulièrement des sommets pour les contributeurs actifs au projet Node.js, où nous avons des discussions en face à face à propos de notre travail sur le projet. La Fondation dispose de fonds de voyage pour couvrir les dépenses des participants, y compris l'hébergement, le transport, les frais de visa, etc. si nécessaire. Consultez le dépôt [Summit](https://github.com/nodejs/summit) pour plus de détails.
 
-[Code of Conduct]: https://github.com/nodejs/admin/blob/HEAD/CODE_OF_CONDUCT.md
-[Landing Pull Requests]: doc/guides/collaborator-guide.md#landing-pull-requests
-[Publicizing or hiding organization membership]: https://help.github.com/articles/publicizing-or-hiding-organization-membership/
-[`author-ready`]: doc/guides/collaborator-guide.md#author-ready-pull-requests
+[Code de conduite]: https://github.com/nodejs/admin/blob/HEAD/CODE_OF_CONDUCT.md
+[Atterrissage des demandes de tirage]: doc/guides/collaborator-guide.md#landing-pull-requests
+[la publication ou la dissimulation de l'adhésion à l'organisation]: https://help.github.com/articles/publicizing-or-hiding-organization-membership/
+[`prête à l'auteur`]: doc/guides/collaborator-guide.md#author-ready-pull-requests
 [`core-validate-commit`]: https://github.com/nodejs/core-validate-commit
 [`git-node`]: https://github.com/nodejs/node-core-utils/blob/HEAD/docs/git-node.md
 [`node-core-utils`]: https://github.com/nodejs/node-core-utils
-[set up the credentials]: https://github.com/nodejs/node-core-utils#setting-up-credentials
-[two-factor authentication]: https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/
-[using a TOTP mobile app]: https://help.github.com/articles/configuring-two-factor-authentication-via-a-totp-mobile-app/
+[configurer les identifiants]: https://github.com/nodejs/node-core-utils#setting-up-credentials
+[l'authentification à deux facteurs]: https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/
+[en utilisant une application mobile TOTP]: https://help.github.com/articles/configuring-two-factor-authentication-via-a-totp-mobile-app/
 [who-to-cc]: doc/guides/collaborator-guide.md#who-to-cc-in-the-issue-tracker
