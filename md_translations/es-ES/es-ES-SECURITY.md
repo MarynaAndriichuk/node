@@ -1,30 +1,30 @@
-# Seguridad
+# Security
 
-## Reportando un error en Node.js
+## Reporting a bug in Node.js
 
-Informar de errores de seguridad en Node.js a través de [HackerOne](https://hackerone.com/nodejs).
+Report security bugs in Node.js via [HackerOne](https://hackerone.com/nodejs).
 
 Your report will be acknowledged within 24 hours, and you’ll receive a more detailed response to your report within 48 hours indicating the next steps in handling your submission.
 
 After the initial reply to your report, the security team will endeavor to keep you informed of the progress being made towards a fix and full announcement, and may ask for additional information or guidance surrounding the reported issue.
 
-### Programa de recompensas de errores Node.js
+### Node.js bug bounty program
 
-The Node.js project engages in an official bug bounty program for security researchers and responsible public disclosures.  The program is managed through the HackerOne platform. Vea <https://hackerone.com/nodejs> para más detalles.
+The Node.js project engages in an official bug bounty program for security researchers and responsible public disclosures.  The program is managed through the HackerOne platform. See <https://hackerone.com/nodejs> for further details.
 
-## Reportando un error en un módulo de terceros
+## Reporting a bug in a third party module
 
 Security bugs in third party modules should be reported to their respective maintainers and should also be coordinated through the Node.js Ecosystem Security Team via [HackerOne](https://hackerone.com/nodejs-ecosystem).
 
 Details regarding this process can be found in the [Security Working Group repository](https://github.com/nodejs/security-wg/blob/HEAD/processes/third_party_vuln_process.md).
 
-Gracias por mejorar la seguridad de Node.js y su ecosistema. Your efforts and responsible disclosure are greatly appreciated and will be acknowledged.
+Thank you for improving the security of Node.js and its ecosystem. Your efforts and responsible disclosure are greatly appreciated and will be acknowledged.
 
-## Política de divulgación
+## Disclosure policy
 
-Aquí está la política de divulgación de seguridad para Node.js
+Here is the security disclosure policy for Node.js
 
-* Se recibe el informe de seguridad y se le asigna un manejador principal. This person will coordinate the fix and release process. The problem is confirmed and a list of all affected versions is determined. Code is audited to find any potential similar problems. Fixes are prepared for all releases which are still under maintenance. These fixes are not committed to the public repository but rather held locally pending the announcement.
+* The security report is received and is assigned a primary handler. This person will coordinate the fix and release process. The problem is confirmed and a list of all affected versions is determined. Code is audited to find any potential similar problems. Fixes are prepared for all releases which are still under maintenance. These fixes are not committed to the public repository but rather held locally pending the announcement.
 
 * A suggested embargo date for this vulnerability is chosen and a CVE (Common Vulnerabilities and Exposures (CVE®)) is requested for the vulnerability.
 
@@ -34,13 +34,13 @@ Aquí está la política de divulgación de seguridad para Node.js
 
 * This process can take some time, especially when coordination is required with maintainers of other projects. Every effort will be made to handle the bug in as timely a manner as possible; however, it’s important that we follow the release process above to ensure that the disclosure is handled in a consistent manner.
 
-## Recibiendo actualizaciones de seguridad
+## Receiving security updates
 
-Las notificaciones de seguridad se distribuirán a través de los siguientes métodos.
+Security notifications will be distributed via the following methods.
 
-* [https://groups.google.com/group/nodejs-seg](https://groups.google.com/group/nodejs-sec)
-* [https://nodejs.org/es/blog/](https://nodejs.org/en/blog/)
+* <https://groups.google.com/group/nodejs-sec>
+* <https://nodejs.org/en/blog/>
 
-## Comentarios sobre esta política
+## Comments on this policy
 
 If you have suggestions on how this process could be improved please submit a [pull request](https://github.com/nodejs/nodejs.org) or [file an issue](https://github.com/nodejs/security-wg/issues/new) to discuss.
