@@ -1,4 +1,4 @@
-# Code de conduite
+# Code of Conduct
 
-* [Code de conduite de Node.js](https://github.com/nodejs/admin/blob/HEAD/CODE_OF_CONDUCT.md)
-* [Politique de modération de Node.js](https://github.com/nodejs/admin/blob/HEAD/Moderation-Policy.md)
+* [Node.js Code of Conduct](https://github.com/nodejs/admin/blob/HEAD/CODE_OF_CONDUCT.md)
+* [Node.js Moderation Policy](https://github.com/nodejs/admin/blob/HEAD/Moderation-Policy.md)
