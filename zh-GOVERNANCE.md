@@ -27,16 +27,16 @@
 
 ## 协作者
 
-Node.js Core Collaborators maintain the [nodejs/node][] GitHub repository. The GitHub team for Node.js Core Collaborators is @nodejs/collaborators. Collaborators have: Node.js核心合作者的GitHub 团队是 @nodejs/collaborator。 协作者：
+Node.js 核心协作员维护 [节点/节点][] GitHub 资源库。 Node.js核心合作者的GitHub 团队是 @nodejs/collaborator。 协作者：
 
 * 提交访问 [节点/节点][] 存储库
 * 访问 Node.js 持续集成 (CI) 作业
 
 协作者和非协作者都可以提议修改Node.js源代码。 提议这种改变的机制是GitHub 拉取请求。 协作者审核并合并 (_land_) 拉取请求。
 
-Two Collaborators must approve a pull request before the pull request can land. (One Collaborator approval is enough if the pull request has been open for more than 7 days.) Approving a pull request indicates that the Collaborator accepts responsibility for the change. Approval must be from Collaborators who are not authors of the change. (如果拉取请求已经打开超过7天，一个协作者批准就足够了。) 批准拉取请求表明协作者接受更改的责任。 合作者必须得到批准，因为他们不是变化的作者。
+两个协作者必须先批准拉请求才能降落。 (如果拉取请求已经打开超过7天，一个协作者批准就足够了。) 批准拉取请求表明协作者接受更改的责任。 合作者必须得到批准，因为他们不是变化的作者。
 
-If a Collaborator opposes a proposed change, then the change cannot land. The exception is if the TSC votes to approve the change despite the opposition. Usually, involving the TSC is unnecessary. Often, discussions or further changes result in Collaborators removing their opposition. 如果海安会不顾反对意见，投票批准这一更改，则属于例外。 通常没有必要让海训方案参与。 讨论或进一步改变常常导致协作者消除其反对意见。
+如果协作者反对拟议的更改，那么这种更改就无法降落。 如果海安会不顾反对意见，投票批准这一更改，则属于例外。 通常没有必要让海训方案参与。 讨论或进一步改变常常导致协作者消除其反对意见。
 
 看：
 
@@ -55,7 +55,7 @@ If a Collaborator opposes a proposed change, then the change cannot land. The ex
 
 ## 技术指导委员会
 
-协作者的一个分组组成技术指导委员会。 A subset of the Collaborators forms the Technical Steering Committee (TSC). The TSC has final authority over this project, including:
+协作者的一个分组组成技术指导委员会。 海训方案对该项目拥有最后权力，包括：
 
 * 技术方向
 * 项目治理和进程(包括这项政策)
@@ -92,7 +92,7 @@ If a Collaborator opposes a proposed change, then the change cannot land. The ex
 
 现有的协作者可以提名某人担任协作者。 被提名者应在诺德.js整个组织中作出重要和宝贵的贡献。
 
-To nominate a new Collaborator, open an issue in the [nodejs/node][] repository. Provide a summary of the nominee's contributions. For example: 请简要说明被提名人的贡献。 例如：
+要提名一个新的协作者，请在 [节点/节点][] 仓库中打开一个问题。 请简要说明被提名人的贡献。 例如：
 
 * 在 [节点/节点][] 仓库中提交。
   * 使用链接 `https://github.com/nodejs/node/commits?author=GITHUB_ID`
@@ -112,7 +112,7 @@ To nominate a new Collaborator, open an issue in the [nodejs/node][] repository.
 
 @nodejs/合作者在这个问题上通知其他协作者有关提名。
 
-The nomination passes if no Collaborators oppose it after one week. Otherwise, the nomination fails. 否则，提名将告失败。
+如果没有合作者在一周后表示反对，提名就会通过。 否则，提名将告失败。
 
 提名者可以事先采取步骤，使提名尽可能不产生摩擦。 若要请其他协作者私下反馈，请使用 [协作者讨论页面][] (只有协作者可以查看)。 提名人也可与被提名人合作，改进他们的提名情况。
 
@@ -120,7 +120,7 @@ The nomination passes if no Collaborators oppose it after one week. Otherwise, t
 
 ### 上线
 
-After the nomination passes, a TSC member onboards the new Collaborator. See [the onboarding guide](./onboarding.md) for details of the onboarding process. 查看 [登机指南](./onboarding.md) 了解登机过程的详细信息。
+提名通过后，海安会的一名成员在新的合作者上岗。 查看 [登机指南](./onboarding.md) 了解登机过程的详细信息。
 
 ## A. 寻求共识的进程
 
@@ -130,6 +130,5 @@ The TSC follows a [Consensus Seeking][] decision-making model per the [TSC Chart
 [Consensus Seeking]: https://en.wikipedia.org/wiki/Consensus-seeking_decision-making
 [海安会章程]: https://github.com/nodejs/TSC/blob/HEAD/TSC-Charter.md
 [TSC Charter]: https://github.com/nodejs/TSC/blob/HEAD/TSC-Charter.md
-[nodejs/node]: https://github.com/nodejs/node
 [节点/节点]: https://github.com/nodejs/node
 [nodejs/节点]: https://github.com/nodejs/node
