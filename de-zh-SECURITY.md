@@ -1,46 +1,46 @@
-# Sicherheit
+# Security
 
-## Fehler in Node.js melden
+## Reporting a bug in Node.js
 
-Melde Sicherheitsfehler in Node.js über [HackerOne](https://hackerone.com/nodejs).
+Report security bugs in Node.js via [HackerOne](https://hackerone.com/nodejs).
 
-Ihr Bericht wird innerhalb von 24 Stunden bestätigt und Sie erhalten innerhalb von 48 Stunden eine detailliertere Antwort auf Ihren Bericht, die die nächsten Schritte bei der Bearbeitung Ihrer Einreichung angibt.
+Your report will be acknowledged within 24 hours, and you’ll receive a more detailed response to your report within 48 hours indicating the next steps in handling your submission.
 
-Nach der ersten Antwort auf Ihren Bericht das Sicherheitsteam wird sich bemühen, Sie über die Fortschritte auf dem Weg zu einer Korrektur und vollständigen Ankündigung auf dem Laufenden zu halten, und können zusätzliche Informationen oder Hinweise zu dem gemeldeten Problem anfordern.
+After the initial reply to your report, the security team will endeavor to keep you informed of the progress being made towards a fix and full announcement, and may ask for additional information or guidance surrounding the reported issue.
 
-### Node.js Bug Bounty Programm
+### Node.js bug bounty program
 
-Das Node.js Projekt engagiert sich in einem offiziellen Bug Bounty Programm für Sicherheitsforscher und verantwortliche öffentliche Enthüllungen.  Das Programm wird über die HackerOne Plattform verwaltet. Siehe <https://hackerone.com/nodejs> für weitere Details.  Das Programm wird über die HackerOne Plattform verwaltet. Siehe <https://hackerone.com/nodejs> für weitere Details.
+The Node.js project engages in an official bug bounty program for security researchers and responsible public disclosures.  The program is managed through the HackerOne platform. See <https://hackerone.com/nodejs> for further details.  The program is managed through the HackerOne platform. See <https://hackerone.com/nodejs> for further details.
 
-## Fehler in einem Drittanbieter-Modul melden
+## Reporting a bug in a third party module
 
-Sicherheitsfehler in Modulen von Drittanbietern sollten ihren jeweiligen Betreuern gemeldet werden und auch über den Knoten koordiniert werden. s Ecosystem Security Team via [HackerOne](https://hackerone.com/nodejs-ecosystem).
+Security bugs in third party modules should be reported to their respective maintainers and should also be coordinated through the Node.js Ecosystem Security Team via [HackerOne](https://hackerone.com/nodejs-ecosystem).
 
-Details zu diesem Prozess finden Sie im [Arbeitsgruppen-Repository](https://github.com/nodejs/security-wg/blob/HEAD/processes/third_party_vuln_process.md).
+Details regarding this process can be found in the [Security Working Group repository](https://github.com/nodejs/security-wg/blob/HEAD/processes/third_party_vuln_process.md).
 
-Vielen Dank für die Verbesserung der Sicherheit von Node.js und seines Ökosystems. Ihre Bemühungen und die verantwortungsvolle Offenlegung werden sehr geschätzt und anerkannt. Ihre Bemühungen und die verantwortungsvolle Offenlegung werden sehr geschätzt und anerkannt.
+Thank you for improving the security of Node.js and its ecosystem. Your efforts and responsible disclosure are greatly appreciated and will be acknowledged. Your efforts and responsible disclosure are greatly appreciated and will be acknowledged.
 
-## Offenlegungsrichtlinie
+## Disclosure policy
 
-Hier ist die Sicherheits-Offenlegungsrichtlinie für Node.js
+Here is the security disclosure policy for Node.js
 
-* Der Sicherheitsbericht wird empfangen und einem primären Handler zugewiesen. Diese Person koordiniert den Fix- und Release-Prozess. Das Problem wird bestätigt und eine Liste aller betroffenen Versionen ermittelt. Code wird geprüft, um mögliche ähnliche Probleme zu finden. Korrekturen sind für alle noch in Wartung befindlichen Veröffentlichungen vorbereitet. Diese Korrekturen werden nicht an das öffentliche Projektarchiv gebunden, sondern lokal bis zur Ankündigung gehalten.
+* The security report is received and is assigned a primary handler. This person will coordinate the fix and release process. The problem is confirmed and a list of all affected versions is determined. Code is audited to find any potential similar problems. Fixes are prepared for all releases which are still under maintenance. These fixes are not committed to the public repository but rather held locally pending the announcement.
 
-* Ein empfohlenes Embargodatum für diese Verwundbarkeit wird gewählt und ein CVE (Common Vulnerabilities and Exposures (CVE®)) wird für die Verwundbarkeit angefordert.
+* A suggested embargo date for this vulnerability is chosen and a CVE (Common Vulnerabilities and Exposures (CVE®)) is requested for the vulnerability.
 
-* Am Embargo-Datum wird der Sicherheits-Mailingliste von Node.js eine Kopie der Ankündigung zugeschickt. Die Änderungen werden in das öffentliche Repository gepresst und neue Builds werden auf nodejs.org installiert. Innerhalb von 6 Stunden nach Bekanntgabe der Mailingliste wird eine Kopie der Ankündigungen im Blog Node.js veröffentlicht. Die Änderungen werden in das öffentliche Repository gepresst und neue Builds werden auf nodejs.org installiert. Innerhalb von 6 Stunden nach Bekanntgabe der Mailingliste wird eine Kopie der Ankündigungen im Blog Node.js veröffentlicht.
+* On the embargo date, the Node.js security mailing list is sent a copy of the announcement. The changes are pushed to the public repository and new builds are deployed to nodejs.org. Within 6 hours of the mailing list being notified, a copy of the advisory will be published on the Node.js blog. The changes are pushed to the public repository and new builds are deployed to nodejs.org. Within 6 hours of the mailing list being notified, a copy of the advisory will be published on the Node.js blog.
 
-* Normalerweise wird das Embargodatum 72 Stunden ab der Ausstellung des Lebenslaufs festgelegt. Dies kann jedoch je nach der Schwere des Fehlers oder der Schwierigkeit bei der Anwendung eines Fehlers variieren. Dies kann jedoch je nach der Schwere des Fehlers oder der Schwierigkeit bei der Anwendung eines Fehlers variieren.
+* Typically the embargo date will be set 72 hours from the time the CVE is issued. However, this may vary depending on the severity of the bug or difficulty in applying a fix. However, this may vary depending on the severity of the bug or difficulty in applying a fix.
 
-* Dieser Prozess kann einige Zeit in Anspruch nehmen, insbesondere wenn die Koordination mit den Betreuern anderer Projekte erforderlich ist. Dieser Prozess kann einige Zeit in Anspruch nehmen, insbesondere wenn die Koordination mit den Betreuern anderer Projekte erforderlich ist. Alle Anstrengungen werden unternommen, um den Fehler so rechtzeitig wie möglich zu behandeln; ist es jedoch wichtig, dass wir den oben genannten Release-Prozess verfolgen, um sicherzustellen, dass die Offenlegung in einer konsistenten Weise behandelt wird.
+* This process can take some time, especially when coordination is required with maintainers of other projects. This process can take some time, especially when coordination is required with maintainers of other projects. Every effort will be made to handle the bug in as timely a manner as possible; however, it’s important that we follow the release process above to ensure that the disclosure is handled in a consistent manner.
 
-## Empfange Sicherheitsaktualisierungen
+## Receiving security updates
 
-Sicherheitsbenachrichtigungen werden über die folgenden Methoden verteilt.
+Security notifications will be distributed via the following methods.
 
 * <https://groups.google.com/group/nodejs-sec>
-* [https://nodejs.org/de/blog/](https://nodejs.org/en/blog/)
+* <https://nodejs.org/en/blog/>
 
-## Kommentare zu dieser Richtlinie
+## Comments on this policy
 
-Wenn Sie Vorschläge haben, wie dieser Prozess verbessert werden könnte, senden Sie bitte eine [Pull-Request](https://github.com/nodejs/nodejs.org) oder [ein Problem](https://github.com/nodejs/security-wg/issues/new) zur Diskussion ein.
+If you have suggestions on how this process could be improved please submit a [pull request](https://github.com/nodejs/nodejs.org) or [file an issue](https://github.com/nodejs/security-wg/issues/new) to discuss.
